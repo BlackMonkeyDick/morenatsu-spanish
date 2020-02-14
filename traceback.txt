@@ -1,0 +1,50 @@
+I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00start.rpy", line 224, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/Flags.rpy", line 21, in script
+    pause 6.6
+  File "renpy/common/000statements.rpy", line 414, in execute_pause
+    renpy.with_statement(Pause(delay))
+IOError: Couldn't find file 'opp.ogv'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 224, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/Flags.rpy", line 21, in script
+    pause 6.6
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\ast.py", line 1828, in execute
+    self.call("execute")
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\ast.py", line 1816, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\statements.py", line 177, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 414, in execute_pause
+    renpy.with_statement(Pause(delay))
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\exports.py", line 1452, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2207, in do_with
+    clear=clear)
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\display\core.py", line 2649, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\display\core.py", line 3318, in interact_core
+    renpy.audio.audio.periodic()
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 988, in periodic_thread_main
+    periodic_pass()
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 932, in periodic_pass
+    c.periodic()
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 416, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\audio\audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "B:\Downloads\renpy-6.99.14.3-sdk\renpy\loader.py", line 555, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'opp.ogv'.
+
+Windows-8-6.2.9200
+Ren'Py 7.0.0.196
+Morenatsu Revival 1.07
+Wed Aug 22 01:19:43 2018
