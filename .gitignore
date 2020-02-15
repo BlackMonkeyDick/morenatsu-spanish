@@ -1,3 +1,6 @@
+*.rpyb
 *.rpyc
+*.save
 */traceback.txt
 */errors.txt
+log.txt
