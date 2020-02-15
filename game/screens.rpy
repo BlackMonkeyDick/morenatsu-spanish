@@ -468,12 +468,12 @@ screen quick_menu():
 
     #if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+    hbox:
+        style_prefix "quick"
 
-            xalign 0.96
-            yalign 0.76
-            spacing 10
+        xalign 0.96
+        yalign 0.76
+        spacing 10
 
             #textbutton _("Back") action Rollback()
             #textbutton _("History") action ShowMenu('history')

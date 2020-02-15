@@ -25,7 +25,6 @@ label splashscreen:
 label splashscreen2:
     
     $ persistent.replay = False
-    $ renpy.change_language("None")    
     
     if persistent.startedgame != True:
         

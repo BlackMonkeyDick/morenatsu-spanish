@@ -14,7 +14,6 @@
 
             
 #label start:
-    
     scene bstop
     "Hello"
     scene beach01
