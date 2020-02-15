@@ -1,0 +1,3 @@
+*.rpyc
+*/traceback.txt
+*/errors.txt
