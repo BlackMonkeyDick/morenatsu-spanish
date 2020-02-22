@@ -441,7 +441,7 @@ define gui.nvl_button_xalign = 0.0
 define gui.language = "unicode"
 
 ## Enable language autodetection
-define config.enable_language_autodetect = True
+define config.language = "spanish"
 
 
 ################################################################################
