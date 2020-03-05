@@ -8,7 +8,7 @@ screen showlast(last):
     
 screen rightname(first, last):
     add "confirm" xpos 400 ypos 270 xanchor .5 yanchor .5 at fadein
-    textbutton ("Your name is {color=#e8892d}[first] [last]{/color}?") xpos 400 ypos 220 xanchor .5 yanchor .5at fadein
+    textbutton (_("Your name is {color=#e8892d}[first] [last]{/color}?")) xpos 400 ypos 220 xanchor .5 yanchor .5at fadein
     imagebutton xpos 230 ypos 290 idle "dialog_yes_normal" hover "dialog_yes_hover" action [Hide("showfirst", Dissolve(2)), Hide("showlast", Dissolve(2)), Jump("ready")]  at fadein
     imagebutton xpos 430 ypos 290 idle "dialog_no_normal" hover "dialog_no_hover" action [Hide("showfirst"), Hide("showlast"), Jump("yourname")]  at fadein
 
@@ -24,7 +24,7 @@ label name_input:
     
 label yourname:
     
-    $ first = renpy.input("What is your first name?", default = "Hiroyuki", length = 10)
+    $ first = renpy.input(_("What is your first name?"), default = "Hiroyuki", length = 10)
     $ first = first.strip()
     if first == "" or first == Null:
         $ first = "Hiroyuki"
@@ -32,7 +32,7 @@ label yourname:
     #$ renpy.transition(wipe_right)
     show screen showfirst(first) 
         
-    $ last = renpy.input("What is your last name?", default = "Nishimura", length = 10)
+    $ last = renpy.input(_("What is your last name?"), default = "Nishimura", length = 10)
     $ last = last.strip()
     if last == "" or last == Null:
         $ last = "Nishimura"
