@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:34
+﻿# TODO: Translation updated at 2018-08-20 02:34
 
 # game/day 15.rpy:56
 translate chinese_traditional camp15_wakeup_tatsuki_d7751045:

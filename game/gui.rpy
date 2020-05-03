@@ -1,4 +1,4 @@
-################################################################################
+﻿################################################################################
 ## Initialization
 ################################################################################
 
@@ -112,7 +112,6 @@ define gui.load_menu_background = "images/image/load_base.png"
 define gui.preference_menu_background = "images/image/config_base.png"
 define gui.select_button = "images/image/sl_win_base.png"
 define gui.game_menu_background = "images/bgimage/black.png"
-define gui.language_menu_background = "images/others/debug.jpg"
 
 ## Should we show the name and version of the game?
 define gui.show_name = True
@@ -440,7 +439,6 @@ define gui.nvl_button_xalign = 0.0
 
 define gui.language = "unicode"
 
-## Enable language autodetection
 define config.language = "spanish"
 
 

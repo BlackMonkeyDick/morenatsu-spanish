@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-19 19:53
+﻿# TODO: Translation updated at 2018-08-19 19:53
 
 # game/Endings.rpy:50
 translate german kounosuke_end_good_c1d47f7b:

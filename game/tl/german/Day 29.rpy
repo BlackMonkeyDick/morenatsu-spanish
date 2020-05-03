@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-19 19:53
+﻿# TODO: Translation updated at 2018-08-19 19:53
 
 # game/Day 29.rpy:38
 translate german kounosuke29_355d5622:

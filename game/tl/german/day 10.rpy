@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-19 19:53
+﻿# TODO: Translation updated at 2018-08-19 19:53
 
 # game/day 10.rpy:109
 translate german day10_7ba2f25c:

@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-19 19:53
+﻿# TODO: Translation updated at 2018-08-19 19:53
 
 # game/Day 4.rpy:113
 translate german day04_phonecall_7e2aee1a:

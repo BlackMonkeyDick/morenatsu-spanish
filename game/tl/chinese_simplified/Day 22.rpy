@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:35
+﻿# TODO: Translation updated at 2018-08-20 02:35
 
 # game/Day 22.rpy:33
 translate chinese_simplified kounosuke22_669cace3:

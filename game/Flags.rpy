@@ -24,7 +24,7 @@ label splashscreen:
     
 label splashscreen2:
     
-    $ persistent.replay = False
+    $ persistent.replay = False 
     
     if persistent.startedgame != True:
         

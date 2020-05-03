@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:35
+﻿# TODO: Translation updated at 2018-08-20 02:35
 
 # game/day 12.rpy:95
 translate chinese_simplified day12_7ba2f25c:

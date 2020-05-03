@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:34
+﻿# TODO: Translation updated at 2018-08-20 02:34
 
 # game/Day 4.rpy:113
 translate chinese_traditional day04_phonecall_7e2aee1a:

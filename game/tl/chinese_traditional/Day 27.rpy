@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:34
+﻿# TODO: Translation updated at 2018-08-20 02:34
 
 # game/Day 27.rpy:37
 translate chinese_traditional kouya27_d619abe4:

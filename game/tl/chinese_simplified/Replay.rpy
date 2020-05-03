@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:35
+﻿# TODO: Translation updated at 2018-08-20 02:35
 
 # game/Replay.rpy:198
 translate chinese_simplified nanafuse00_1fb89b72:

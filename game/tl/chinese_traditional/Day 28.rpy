@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:34
+﻿# TODO: Translation updated at 2018-08-20 02:34
 
 # game/Day 28.rpy:39
 translate chinese_traditional tatsuki28_b1ef0328:

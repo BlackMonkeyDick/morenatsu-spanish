@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:34
+﻿# TODO: Translation updated at 2018-08-20 02:34
 
 # game/Day 24.rpy:57
 translate chinese_traditional map24_90b02c0f:

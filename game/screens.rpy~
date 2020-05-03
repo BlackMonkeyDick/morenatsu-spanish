@@ -3,7 +3,6 @@
 ################################################################################
 init python:        
     import math
-    #translate_define(spanish)
     config.keymap['game_menu'] = []
     config.keymap['game_menu2'] = ['mousedown_3']
     #!#config.game_menu_action = [FileTakeScreenshot(), Show("navigation")]#, transition = menu_in)

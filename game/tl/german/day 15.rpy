@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-19 19:53
+﻿# TODO: Translation updated at 2018-08-19 19:53
 
 # game/day 15.rpy:56
 translate german camp15_wakeup_tatsuki_d7751045:

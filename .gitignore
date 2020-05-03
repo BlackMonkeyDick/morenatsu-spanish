@@ -1,6 +1,6 @@
 *.rpyb
 *.rpyc
-*.save
+game/saves/
 */traceback.txt
 */errors.txt
 log.txt

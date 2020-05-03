@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:34
+﻿# TODO: Translation updated at 2018-08-20 02:34
 
 # game/Day 17.rpy:42
 translate chinese_traditional kounosuke17_91b5ecf4:

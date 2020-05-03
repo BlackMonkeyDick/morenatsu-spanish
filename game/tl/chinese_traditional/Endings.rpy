@@ -1,4 +1,4 @@
-# TODO: Translation updated at 2018-08-20 02:34
+﻿# TODO: Translation updated at 2018-08-20 02:34
 
 # game/Endings.rpy:50
 translate chinese_traditional kounosuke_end_good_c1d47f7b:

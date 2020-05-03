@@ -21,8 +21,8 @@ translate spanish begin_4a4dd1b1:
 # game/Welcome Party.rpy:32
 translate spanish begin_65917c11:
 
-    # mom "「What are you talking about?{p} \ The weather outside is nice today, \n \ and you're lying around doing nothing. 」"
-    mom "「¿Pero de qué estás hablando?{p} \ Hace muy buen tiempo hoy, \n \ y tú estás ahí sin hacer nada. 」"
+    # mom "「What are you talking about?{p}\ \ The weather outside is nice today, \n\ \ and you're lying around doing nothing. 」"
+    mom "「¿Pero de qué estás hablando?{p}\ \ Hace muy buen tiempo hoy, \n\ \ y tú estás ahí sin hacer nada. 」"
 
 # game/Welcome Party.rpy:33
 translate spanish begin_cdf0b47e:
