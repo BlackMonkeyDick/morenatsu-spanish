@@ -8,7 +8,7 @@ screen tatsukihouse13:
         add "icon_shun"
         at tatsukibounce2
     hbox: 
-        text "Tatsuki's House"
+        text _("Tatsuki's House")
         xalign .85 yalign .88
         
 screen school13:
@@ -19,7 +19,7 @@ screen school13:
         add "icon_tatsu"
         at schoolbounce2
     hbox:
-        text "School"
+        text _("School")
         xalign .42 yalign .37
         
         
@@ -29,7 +29,7 @@ screen minasatomap13():
     imagebutton idle "a icon" hover "icon loop" xpos 315 ypos 163 action Jump("tatsuki13") hovered Show("school13")  unhovered Hide("school13") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("shun13") hovered Show("tatsukihouse13")  unhovered Hide("tatsukihouse13") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 13"
+        text _("{size=+30}August 13")
         at maptime     
 
 ####################################################
@@ -41,8 +41,8 @@ label day13:
     
     $ day = 13
     $ focus_character = ""
-    $ event_name = "８月13日"
-    $ the_date = "August 13"
+    $ event_name = _("８月13日")
+    $ the_date = _("August 13")
     
     window hide
     play music birds_chirping
@@ -68,7 +68,7 @@ label shun13:
 
     $ focus_character = "shun"
     $ love_shun += 1
-    $ event_name = "Hearing Strange Sounds"
+    $ event_name = _("Hearing Strange Sounds")
 
     scene map
     hide screen tatsukihouse13
@@ -101,7 +101,7 @@ label shun13:
     #############################################
     label shun13_play:
 
-        $ event_name = "Let's Play Together"
+        $ event_name = _("Let's Play Together")
         $ love_shun += 1
         $ love_tatsuki += 1
         
@@ -194,7 +194,7 @@ label shun13:
     ################################################
     label shun13_alone:
 
-        $ event_name = "I shouldn't disturb them..."
+        $ event_name = _("I shouldn't disturb them...")
 
         stop music fadeout 1.5
     
@@ -221,7 +221,7 @@ label shun13:
     ################################################
     label shun13_gohome:
 
-        $ event_name = "From the Middle of the Day"
+        $ event_name = _("From the Middle of the Day")
 
         play music cicada01 fadein 2
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -233,7 +233,7 @@ label shun13:
     ###############################################
     label shun13_surprise:
 
-        $ event_name = "Chasing"
+        $ event_name = _("Chasing")
         $ love_shun -= 1
         $ love_tatsuki -= 1
 
@@ -277,7 +277,7 @@ label shun13:
     ###############################################
     label shun13_carpenters:
 
-        $ event_name = "The Carpenters of Minasato"
+        $ event_name = _("The Carpenters of Minasato")
 
         play music pops_003 fadein 1
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")        
@@ -364,7 +364,7 @@ label shun13:
         play sound step06
         pause 1
 
-        $ event_name = "The Blue Sky, and the 3 in It"
+        $ event_name = _("The Blue Sky, and the 3 in It")
 
         play music free02
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -641,7 +641,7 @@ label shun13:
 #######################################################
 label tatsuki13:
 
-    $ event_name = "Teacher and Field Work"
+    $ event_name = _("Teacher and Field Work")
     $ love_tatsuki += 1
     $ focus_character = "tatsuki"
 
@@ -750,7 +750,7 @@ label tatsuki13:
     ##########################################
     label tatsuki13_outside:
 
-        $ event_name = "Harvesting Time"
+        $ event_name = _("Harvesting Time")
     
         fn "「I can still do the physical stuff. 」"
         "Old man, please don't make fun of me..."
@@ -831,7 +831,7 @@ label tatsuki13:
     ############################################    
     label tatsuki13_inside:
         
-        $ event_name = "Light Work"
+        $ event_name = _("Light Work")
 
         scene black with Dissolve(.5)
         scene farmhouse_in with Dissolve(1)
@@ -881,7 +881,7 @@ label tatsuki13:
     ##############################################
     label tatsuki13_rest:
 
-        $ event_name = "Back to work"
+        $ event_name = _("Back to work")
 
         scene old_house1 
         show over black
@@ -1088,7 +1088,7 @@ label tatsuki13:
     ################################################
     label tatsuki13_tatsuki:
 
-        $ event_name = "Teamwork"
+        $ event_name = _("Teamwork")
     
         fn "「Uhh... 」"
         
@@ -1216,7 +1216,7 @@ label tatsuki13:
     ##############################################
     label tatsuki13_kyouji:
 
-        $ event_name = "Let's take a shortcut!"
+        $ event_name = _("Let's take a shortcut!")
 
         scene field1
         show over black
@@ -1293,7 +1293,7 @@ label tatsuki13:
     ##################################################
     label tatsuki13_torahiko:
 
-        $ event_name = "Power Game"
+        $ event_name = _("Power Game")
         $ love_torahiko -= 1
         $ love_tatsuki -= 1
         $ love_kyouji -= 1
@@ -1415,7 +1415,7 @@ label tatsuki13:
     ###################################################
     label tatsuki13_done:
 
-        $ event_name = "Rain letting up"
+        $ event_name = _("Rain letting up")
 
         scene black with Dissolve(1)
         scene old_house1 

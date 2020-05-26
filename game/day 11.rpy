@@ -8,7 +8,7 @@ screen marketplace11:
         add "icon_juu"
         at marketbounce2
     hbox:
-        text "Market"
+        text _("Market")
         xalign .5 yalign .52
 screen shinhouse11:
     hbox:
@@ -18,7 +18,7 @@ screen shinhouse11:
         add "icon_shin"
         at shinbounce2
     hbox:
-        text "Shin's House"
+        text _("Shin's House")
         xalign .16 yalign .70
 screen riverbed11:
     hbox:
@@ -52,7 +52,7 @@ screen riverbed11:
         add "icon_tora"
         at riverbounce10 
     hbox: 
-        text "Dry Riverbed"
+        text _("Dry Riverbed")
         xalign .625 yalign .7
         
 screen minasatomap11a():
@@ -61,7 +61,7 @@ screen minasatomap11a():
     imagebutton idle "a icon" hover "icon loop" xpos 87 ypos 278  action Jump("shin11") hovered Show("shinhouse11")  unhovered Hide("shinhouse11") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 372 ypos 249  action Jump("juuichi11") hovered Show("marketplace11")  unhovered Hide("marketplace11") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 11"
+        text _("{size=+30}August 11")
         at maptime
         
 screen minasatomap11b():
@@ -69,7 +69,7 @@ screen minasatomap11b():
     add "mapdate"
     imagebutton idle "a icon" hover "icon loop" xpos 87 ypos 278  action Jump("shin11") hovered Show("shinhouse11")  unhovered Hide("shinhouse11") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 11"
+        text _("{size=+30}August 11")
         at maptime
         
 screen minasatomap11c():
@@ -78,7 +78,7 @@ screen minasatomap11c():
     imagebutton idle "a icon" hover "icon loop" xpos 87 ypos 278  action Jump("shin11") hovered Show("shinhouse11")  unhovered Hide("shinhouse11") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 458 ypos 351  action Jump("tatsuki11") hovered Show("riverbed11")  unhovered Hide("riverbed11") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 11"
+        text _("{size=+30}August 11")
         at maptime
         
         
@@ -89,7 +89,7 @@ screen minasatomap11d():
     imagebutton idle "a icon" hover "icon loop"  xpos 372 ypos 249  action Jump("juuichi11") hovered Show("marketplace11")  unhovered Hide("marketplace11") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 458 ypos 351  action Jump("tatsuki11") hovered Show("riverbed11")  unhovered Hide("riverbed11") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 11"
+        text _("{size=+30}August 11")
         at maptime
         
 ###################################################        
@@ -100,8 +100,8 @@ label day11:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 11
-    $ event_name = "８月11日"
-    $ the_date = "August 11"
+    $ event_name = _("８月11日")
+    $ the_date = _("August 11")
     $ focus_character = ""
     
     $ affectionlist = [love_tatsuki, love_kounosuke, love_shun, love_kouya, love_shin, love_juuichi, love_soutarou, love_kyouji, love_torahiko]
@@ -141,7 +141,7 @@ label shin11:
 
     $ love_shin += 1
     $ focus_character = "shin"
-    $ event_name = "Rain of Friday"
+    $ event_name = _("Rain of Friday")
 
     scene map
     hide screen shinhouse11
@@ -531,7 +531,7 @@ label shin11:
 ####################################################
 label juuichi11:
 
-    $ event_name = "The Library has a ominous scent"
+    $ event_name = _("The Library has a ominous scent")
     $ love_juuichi += 1
     $ focus_character = "juuichi"
 
@@ -589,7 +589,7 @@ label juuichi11:
     play music tam_n06
     scene library with Dissolve(1)
 
-    $ event_name = "The Pleasantly Cool Place"
+    $ event_name = _("The Pleasantly Cool Place")
 
     "...So.{p}Here I am, at the library."
     "The room is chilled by the\nwonders of modern society.{w=.2}\nIt welcomes me, as though I've been blessed."
@@ -782,7 +782,7 @@ label juuichi11:
     #########################################
     label juuichi11_tennis:
 
-        $ event_name = "Aim For the Prince of Tennis"
+        $ event_name = _("Aim For the Prince of Tennis")
         $ love_juuichi += 1
         $ love_shin += 1
         
@@ -876,7 +876,7 @@ label juuichi11:
     #############################################
     label juuichi11_swimming:
 
-        $ event_name = "120% Wrath"
+        $ event_name = _("120% Wrath")
         $ love_shin -= 1
         $ love_juuichi -= 1
         
@@ -949,7 +949,7 @@ label juuichi11:
     ###########################################
     label juuichi11_dodge:
 
-        $ event_name = "The Impertinent, Salty Taste of Youth"
+        $ event_name = _("The Impertinent, Salty Taste of Youth")
         $ love_juuichi -= 1
         
         "I steel myself, and select one.{p}The 'evade' card."
@@ -1114,7 +1114,7 @@ label tatsuki11:
 
     $ love_tatsuki += 1
     $ focus_character = "tatsuki"
-    $ event_name = "Fireworks Gathering"
+    $ event_name = _("Fireworks Gathering")
 
     scene map
     hide screen riverbed11
@@ -1236,7 +1236,7 @@ label tatsuki11:
     ######################################
     label tatsuki11_fireworks:
 
-        $ event_name = "At the General Store"
+        $ event_name = _("At the General Store")
 
         play music free53
     
@@ -1503,7 +1503,7 @@ label tatsuki11:
     ############################################
     label tatsuki11_stop:
 
-        $ event_name = "Abstinence"
+        $ event_name = _("Abstinence")
         
         fn "「The main event today is fireworks, so it'd\n\ \ be better if you don't get sake. 」"
         
@@ -1536,7 +1536,7 @@ label tatsuki11:
     #################################################    
     label tatsuki11_proceed:
 
-        $ event_name = "Drinking but not drunk"
+        $ event_name = _("Drinking but not drunk")
 
         fn "「Is cold beer that good today? 」"
     
@@ -1631,7 +1631,7 @@ label tatsuki11:
     ##########################################
     label tatsuki11_showtime:
 
-        $ event_name = "Let's set off Fireworks!"
+        $ event_name = _("Let's set off Fireworks!")
 
         scene river night with sdis
         play music river_flow
@@ -1839,7 +1839,7 @@ label tatsuki11:
     ###################################### 
     label tatsuki11_rocket:
 
-        $ event_name = "Rocket Firework"    
+        $ event_name = _("Rocket Firework")    
         $ love_juuichi -= 1
         $ love_torahiko -= 1
         
@@ -1929,7 +1929,7 @@ label tatsuki11:
     #############################################    
     label tatsuki11_bottom:
 
-        $ event_name = "What's left over?"
+        $ event_name = _("What's left over?")
         $ love_shun += 1
         scene river night with wipe_right
         
@@ -2011,7 +2011,7 @@ label tatsuki11:
     #########################################
     label tatsuki11_fountain:
 
-        $ event_name = "Dragon"
+        $ event_name = _("Dragon")
         $ love_tatsuki -= 1
     
         fn "「Hey, Tatsu-nii. 」"

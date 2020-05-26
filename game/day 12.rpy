@@ -8,7 +8,7 @@ screen shrine12:
         add "icon_kouya"
         at shrinebounce2
     hbox:
-        text "Minasato Shrine"
+        text _("Minasato Shrine")
         xalign .16 yalign .12
 screen tatsukihouse12:
     hbox:
@@ -18,7 +18,7 @@ screen tatsukihouse12:
         add "icon_tatsu"
         at tatsukibounce2
     hbox: 
-        text "Tatsuki's House"
+        text _("Tatsuki's House")
         xalign .85 yalign .88
 screen riverbed12:
     hbox:
@@ -28,7 +28,7 @@ screen riverbed12:
         add "icon_juu"
         at riverbounce2
     hbox: 
-        text "River"
+        text _("River")
         xalign .625 yalign .7
         
 screen minasatomap12a():
@@ -36,7 +36,7 @@ screen minasatomap12a():
     add "mapdate"
     imagebutton idle "a icon" hover "icon loop" xpos 164 ypos 104 action Jump("kouya12") hovered Show("shrine12")  unhovered Hide("shrine12") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 12"
+        text _("{size=+30}August 12")
         at maptime
         
 screen minasatomap12b():
@@ -45,7 +45,7 @@ screen minasatomap12b():
     imagebutton idle "a icon" hover "icon loop" xpos 164 ypos 104 action Jump("kouya12") hovered Show("shrine12")  unhovered Hide("shrine12") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 458 ypos 351  action Jump("juuichi12") hovered Show("riverbed12")  unhovered Hide("riverbed12") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 12"
+        text _("{size=+30}August 12")
         at maptime  
         
 screen minasatomap12c():
@@ -54,7 +54,7 @@ screen minasatomap12c():
     imagebutton idle "a icon" hover "icon loop" xpos 164 ypos 104 action Jump("kouya12") hovered Show("shrine12")  unhovered Hide("shrine12") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki12") hovered Show("tatsukihouse12")  unhovered Hide("tatsukihouse12") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 12"
+        text _("{size=+30}August 12")
         at maptime            
         
 screen minasatomap12d():
@@ -64,7 +64,7 @@ screen minasatomap12d():
     imagebutton idle "a icon" hover "icon loop"  xpos 458 ypos 351  action Jump("juuichi12") hovered Show("riverbed12")  unhovered Hide("riverbed12") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki12") hovered Show("tatsukihouse12")  unhovered Hide("tatsukihouse12") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 12"
+        text _("{size=+30}August 12")
         at maptime
         
 #########################################
@@ -75,8 +75,8 @@ label day12:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 12
-    $ event_name = "８月12日"
-    $ the_date = "August 12"
+    $ event_name = _("８月12日")
+    $ the_date = _("August 12")
     $ focus_character = ""
     
     window hide
@@ -109,7 +109,7 @@ label day12:
 ##################################################        
 label juuichi12:
 
-    $ event_name = "Soutarou's Worries"
+    $ event_name = _("Soutarou's Worries")
     $ love_juuichi += 1
     $ focus_character = "juuichi"
 
@@ -225,7 +225,7 @@ label juuichi12:
     ###############################################
     label juuichi12_body:
 
-        $ event_name = "Sleep Brings Up a Child Well"
+        $ event_name = _("Sleep Brings Up a Child Well")
         $ love_juuichi += 1
         $ love_soutarou += 1
     
@@ -406,7 +406,7 @@ label juuichi12:
     ############################################
     label juuichi12_stick:
 
-        $ event_name = "Lament of the Burning Match"
+        $ event_name = _("Lament of the Burning Match")
         $ love_juuichi -= 1
         $ love_soutarou -= 1
         play music free22
@@ -525,7 +525,7 @@ label juuichi12:
 label kouya12:
 
     $ focus_character = "kouya"
-    $ event_name = "Unexpected Encounter"
+    $ event_name = _("Unexpected Encounter")
     $ love_kouya += 1
     scene map
     hide screen shrine12    
@@ -833,7 +833,7 @@ label kouya12:
     #############################################
     label kouya12_go:
 
-        $ event_name = "Let's Go Right Now"
+        $ event_name = _("Let's Go Right Now")
         $ love_kouya += 1
         
         fn "「...Sure, I'll come. 」"
@@ -905,7 +905,7 @@ label kouya12:
     #########################################
     label kouya12_pass:
 
-        $ event_name = "I'll Go on Ahead."
+        $ event_name = _("I'll Go on Ahead.")
     
         fn "「...it's been a while, but I'll pass this time.{p}\ \ It's for the band members and no one else,\n\ \ so I figure it'd be weird for me to come along. 」"
         "Also, being here together with Kouya is giving me\na bad feeling in my heart.{w} I might end up blowing\nmyself up in a weird state of mind."
@@ -974,7 +974,7 @@ label kouya12:
     ############################################
     label kouya12_continue:
 
-        $ event_name = "Continuing On."
+        $ event_name = _("Continuing On.")
 
         play music daily02
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -1075,7 +1075,7 @@ label kouya12:
     #######################################
     label kouya12_you:
 
-        $ event_name = "Old Talk"
+        $ event_name = _("Old Talk")
         
         show ke 001 at midright
         show ka 001 at midleft
@@ -1166,7 +1166,7 @@ label kouya12:
     ################################################
     label kouya12_me:
 
-        $ event_name = "He said..."
+        $ event_name = _("He said...")
         
         "Hmm,{w=.2} I'm a little stumped for things to talk about."
         "...Well, there was that one thing from earlier."
@@ -1336,7 +1336,7 @@ label kouya12:
     #########################################
     label kouya12_lake:
 
-        $ event_name = "Memory of the Lake"
+        $ event_name = _("Memory of the Lake")
     
         scene black with Dissolve(.5)
         pause .1
@@ -1502,7 +1502,7 @@ label kouya12:
 ##################################################
 label tatsuki12:
 
-    $ event_name = "A secret shared between us"
+    $ event_name = _("A secret shared between us")
     $ love_tatsuki += 1
     $ focus_character = "tatsuki"
 
@@ -1837,7 +1837,7 @@ label tatsuki12:
     
     hide tp with wipe_right
     
-    $ event_name = "After Work"
+    $ event_name = _("After Work")
     
     play music free0213 fadein 3
     
@@ -2045,7 +2045,7 @@ label tatsuki12:
     ###########################################        
     label tatsuki12_force:
 
-        $ event_name = "Changing Clothes"
+        $ event_name = _("Changing Clothes")
 
         play music free53 fadein 3
     
@@ -2316,7 +2316,7 @@ label tatsuki12:
     ################################################
     label tatsuki12_quiet:
 
-        $ event_name = "Changing"
+        $ event_name = _("Changing")
     
         show ta 001 with dis
     
@@ -2388,7 +2388,7 @@ label tatsuki12:
     ##############################################    
     label tatsuki12_shigure:
 
-        $ event_name = "Uncle Shigure"
+        $ event_name = _("Uncle Shigure")
 
         scene path with dis
         play music free51 fadein 1
@@ -2564,7 +2564,7 @@ label tatsuki12:
     ###############################################    
     label tatsuki12_tappei:
 
-        $ event_name = "Tappei Midoriya"
+        $ event_name = _("Tappei Midoriya")
 
         play music daily02 fadein 3
         scene raimon1 with dis

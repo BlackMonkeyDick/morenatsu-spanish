@@ -7,8 +7,8 @@ label day14:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 14
-    $ the_date = "August 14"
-    $ event_name = "How about tomorrow"
+    $ the_date = _("August 14")
+    $ event_name = _("How about tomorrow")
     $ focus_character = ""
     
     scene hbroom with Dissolve(1)
@@ -26,10 +26,10 @@ label day14:
     "What day would be convenient for everybody?{p}Hmm, maybe I should call them first.{p}After that..."
     
     scene black with Dissolve(1)
-    $ event_name = "Meeting time"
+    $ event_name = _("Meeting time")
     play music birds_chirping
     scene sky01 
-    show text "{size=+130}August 14" at truecenter
+    show text _("{size=+130}August 14") at truecenter
     with Dissolve(.5)
     pause 3
     scene black with Dissolve(1)
@@ -281,7 +281,7 @@ label day14:
     
     scene black with dis
     stop music fadeout .2
-    $ event_name = "Let's start camping"
+    $ event_name = _("Let's start camping")
     scene camp_site with sdis
     play music free0258
 
@@ -444,7 +444,7 @@ label day14:
 
     "Somehow I didn't get assigned a role.{p}I wonder what I should try."
 
-    $ event_name = "Curry and Rice"
+    $ event_name = _("Curry and Rice")
     scene black with wipe_down_slow
     scene camp_site
     show ta 001 at midright
@@ -565,7 +565,7 @@ label day14:
     
     scene black with sdis
     pause .5
-    $ event_name = "Camp Fire"
+    $ event_name = _("Camp Fire")
     scene camp_site red
     show ta 001 red at offright
     show to 001 red at midright
@@ -877,7 +877,7 @@ label day14:
     with sdis
     pause .2
     show ta 002 night with dis
-    $ event_name = "Perverted Conversation"
+    $ event_name = _("Perverted Conversation")
 
     ta "「All right, I finished cleaning everything up.{p}\ \ I also took care of the fire. 」"
     fn "「So now we just go to sleep?{p}\ \ There's nothing to do after it gets dark. 」"
@@ -1239,7 +1239,7 @@ label day14:
     fn "「If so, then please teach me right now. 」"
     ju "「Stop talking about that nonsense and go to sleep. 」"
 
-    $ event_name = "Bedtime"
+    $ event_name = _("Bedtime")
     
     scene camp_site night
     show ko 001 night at center

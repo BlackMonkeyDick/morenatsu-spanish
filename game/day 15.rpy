@@ -7,15 +7,15 @@ label day15:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 15
-    $ the_date = "August 15"
-    $ event_name = "８月15日"
+    $ the_date = _("August 15")
+    $ event_name = _("８月15日")
     $ focus_character = ""
     
     window hide
     play music birds_chirping
     
     scene sky01 
-    show text "{size=+130}August 15" at truecenter
+    show text _("{size=+130}August 15") at truecenter
     with Dissolve(.5)
 
     pause 3
@@ -49,7 +49,7 @@ label day15:
 #######################################    
 label camp15_wakeup_tatsuki:
 
-    $ event_name = "Morning, Tatsu-nii"
+    $ event_name = _("Morning, Tatsu-nii")
 
     show ta 002 at center with dis
 
@@ -66,7 +66,7 @@ label camp15_wakeup_tatsuki:
 ########################################
 label camp15_wakeup_shun:
 
-    $ event_name = "Ride me, my Wolf!" 
+    $ event_name = _("Ride me, my Wolf!" )
    
     who "「...[fn]-san! 」"
     fn "「...Mnn... 」"
@@ -174,7 +174,7 @@ label camp15_wakeup_shun:
 ####################################
 label camp15_wakeup_kouya:
     
-    $ event_name = "On the edge of sleep"
+    $ event_name = _("On the edge of sleep")
     
     who "「Hey...{w} Hey, [fn]. 」"
     "In my half-asleep consciousness, I can hear a voice."
@@ -263,7 +263,7 @@ label camp15_wakeup_juuichi:
 ######################################
 label camp15_wakeup_shin:
     
-    $ event_name = "Morning needles"
+    $ event_name = _("Morning needles")
     
     who "「How much longer are you planning on sleeping? 」"
     "Shake shake shake."
@@ -294,7 +294,7 @@ label camp15_wakeup_shin:
 #########################################
 label camp15_wakeup_kounosuke:
     
-    $ event_name = "BWAH!"
+    $ event_name = _("BWAH!")
     
     who "「Heey,{w=.2} wake up- 」"
     "Someone is calling me."
@@ -341,7 +341,7 @@ label camp15_wakeup_kounosuke:
 ###################################
 label camp15_explore:
 
-    $ event_name = "Nature"
+    $ event_name = _("Nature")
 
     stop music fadeout 1
     scene black with sdis
@@ -411,7 +411,7 @@ label camp15_choice:
 ##################################
 label camp15_tatsuki:
 
-    $ event_name = "Exploration Party"
+    $ event_name = _("Exploration Party")
     $ love_tatsuki += 1
     $ focus_character = "kounosuke"
     
@@ -822,7 +822,7 @@ label camp15_tatsuki:
 ################################################
 label camp15_shun:
 
-    $ event_name = "Shun and the God of Marriage"
+    $ event_name = _("Shun and the God of Marriage")
     $ love_shun += 1
     $ focus_character = "shun"
 
@@ -983,7 +983,7 @@ label camp15_shun:
 #####################################
 label camp15_kouya:
 
-    $ event_name = "Kouya's search for the light"
+    $ event_name = _("Kouya's search for the light")
     $ love_kouya += 1
     $ focus_character = "kouya"
     
@@ -1372,7 +1372,7 @@ label camp15_juuichi:
         
         jump camp15_choice
     
-    $ event_name = "Hot Springs, Steamy Romance, what's the difference?"
+    $ event_name = _("Hot Springs, Steamy Romance, what's the difference?")
     $ love_juuichi += 1
     $ focus_character = "juuichi"
     
@@ -1672,7 +1672,7 @@ label camp15_juuichi:
 #########################################
 label camp15_shin:
 
-    $ event_name = "Tale of the Lying Kitten"
+    $ event_name = _("Tale of the Lying Kitten")
     $ love_shin += 1
     $ focus_character = "shin"
     
@@ -1961,7 +1961,7 @@ label camp15_shin:
 ########################################
 label camp15_kounosuke:
 
-    $ event_name = "Exploration Showdown"
+    $ event_name = _("Exploration Showdown")
     $ focus_character = "kounosuke"
     $ love_kounosuke += 1
 
@@ -2564,7 +2564,7 @@ label camp15_kounosuke:
 label camp15_packup:
     
     $ focus_character = ""
-    $ event_name = "Packing up"
+    $ event_name = _("Packing up")
 
     stop music fadeout 1.5
     scene black with sdis
@@ -2651,7 +2651,7 @@ label camp15_packup:
 #########################################
 label camp15_confess_tatsuki:
 
-    $ event_name = "Tatsu-nii"
+    $ event_name = _("Tatsu-nii")
 
     show ta 001 red at center with dis
     
@@ -2800,7 +2800,7 @@ label camp15_confess_tatsuki:
 #########################################
 label camp15_confess_shun:
 
-    $ event_name = "I don't want it to end"
+    $ event_name = _("I don't want it to end")
 
     show su 004 red at center with dis
     
@@ -2852,7 +2852,7 @@ label camp15_confess_shun:
 #######################################
 label camp15_confess_kouya:
 
-    $ event_name = "Time Limit - Countdown Phase"
+    $ event_name = _("Time Limit - Countdown Phase")
     
     "Somebody approaches me from behind.{p}The Sun behind me makes a glare,\nso I'm not sure who it is."
     "That's..."
@@ -2938,7 +2938,7 @@ label camp15_confess_kouya:
 ###########################################
 label camp15_confess_juuichi:
 
-    $ event_name = "Words Sinking With the Setting Sun"
+    $ event_name = _("Words Sinking With the Setting Sun")
     
     "Everybody breaks away from the circle,{w=.2} leaving\nJuuichi-san standing alone.{w} For some reason, {w=.2}he stares\nat the remains of the campfire."
     "The burnt firewood is illuminated by the evening sun.{p}It glows a dull, {w=.2}fake orange that isn't from a flame.{p}The charcoal will probably never burn again, either."
@@ -3004,7 +3004,7 @@ label camp15_confess_juuichi:
 ################################################
 label camp15_confess_shin:
 
-    $ event_name = "I'm not fond of Sunsets"
+    $ event_name = _("I'm not fond of Sunsets")
     
     "I found Shin-kun looking pensively at the sunset."
 
@@ -3087,7 +3087,7 @@ label camp15_mumble2:
 ##################################################
 label camp15_confess_kounosuke:
     
-    $ event_name = "The Spoiler Tanuki"
+    $ event_name = _("The Spoiler Tanuki")
     
     ko "「Wha~t are you doing, [fn]? 」"
     
