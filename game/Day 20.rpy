@@ -7,7 +7,7 @@ screen ricefield20:
         add "icon_kouya"
         at ricebounce2
     hbox:
-        text "Rice Fields"
+        text _("Rice Fields")
         xalign .245 yalign .66
         
 screen house20:
@@ -18,7 +18,7 @@ screen house20:
         add "icon_shun"
         at housebounce2
     hbox:
-        text "[fn]'s House"
+        text _("[fn]'s House")
         xalign .58 yalign .42
         
 screen minasatomap20():
@@ -40,15 +40,15 @@ label day20:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 20
-    $ the_date = "August 20"
-    $ event_name = "８月20日"    
+    $ the_date = _("August 20")
+    $ event_name = _("８月20日")   
     
     if favorite == "tatsuki" or favorite == "shun" or favorite == "kouya" or favorite == "shin":
         window hide
         play music birds_chirping
         
         scene sky01 
-        show text "{size=+130}August 20" at truecenter
+        show text _("{size=+130}August 20") at truecenter
         with Dissolve(.5)
     
         pause 3
@@ -151,7 +151,7 @@ label tatsuki20:
     
     tp "「Don't go showing off something\n\ \ so dirty in the morning!!\n\ \ {size=+15}LITTLE SHIIIT!!! 」"
 
-    $ event_name = "Half Holiday"
+    $ event_name = _("Half Holiday")
 
     stop music fadeout 1.5
     scene black with sdis
@@ -307,7 +307,7 @@ label tatsuki20:
     
     ta "「All right, now that's settled,\n\ \ let's hurry up and clean up here. 」"
     
-    $ event_name = "What is this, the Kaminarimon?" #Kaminarimon = Thunder Gate
+    $ event_name = _("What is this, the Kaminarimon?") #Kaminarimon = Thunder Gate
     #Looked this up.  It's a gate in Tokyo that's popular amongst tourists.  There is a large lantern in the gate with a wood carving of a dragon on the underside of the lantern.
     #This is just my interpretation, but perhaps you receive a blessing from the dragon when you pass under it.
     #Would make sense since in this scene the main character is given a large sum of money by Tatsuki, a dragon.
@@ -378,7 +378,7 @@ label tatsuki20:
     
     scene black with wipeleft
 
-    $ event_name = "Medication"
+    $ event_name = _("Medication")
 
     scene tetsuya_house_out with sdis
     show te 001 at center with dis
@@ -477,7 +477,7 @@ label tatsuki20:
     #######################################################
     label tatsuki20_alcohol:
         
-        $ event_name = "Here's something to drink"
+        $ event_name = _("Here's something to drink")
         
         fn "「Here, I got some sake. 」"
         
@@ -497,7 +497,7 @@ label tatsuki20:
     #######################################################
     label tatsuki20_fish:
 
-        $ event_name = "Salted Salmon"
+        $ event_name = _("Salted Salmon")
         
         fn "「Here, I got some 'Sake'. 」"
         "Right. If sake is no good,\n'Sake' brand salmon should be fine."
@@ -524,7 +524,7 @@ label tatsuki20:
     #######################################################
     label tatsuki20_sweets:
     
-        $ event_name = "A Gift of Summer"
+        $ event_name = _("A Gift of Summer")
         
         "In times like this,\nthe best thing to get is a box of sweets."
         fn "「This is the season for mizuyoukan, after all. 」"
@@ -695,7 +695,7 @@ label tatsuki20:
     #####################################################
     label tatsuki20_drunk:
         
-        $ event_name = "Drunken Dragon"
+        $ event_name = _("Drunken Dragon")
         
         stop music fadeout 1.5
         scene black with sdis
@@ -766,7 +766,7 @@ label tatsuki20:
     ###################################################
     label tatsuki20_hotsprings:
         
-        $ event_name = "Midoriya Group at the Hot Springs"
+        $ event_name = _("Midoriya Group at the Hot Springs")
         
         stop music fadeout 1.5
         scene black with wipeleft
@@ -1109,7 +1109,7 @@ label tatsuki20:
 #######################################################
 label shun20:
     
-    $ event_name = "The Blue Moon and the Wolf"
+    $ event_name = _("The Blue Moon and the Wolf")
 
     scene map
     hide screen house20
@@ -1197,7 +1197,7 @@ label shun20:
     ############################################
     label shun20_angry_gaku:
         
-        $ event_name = "Light Brown Fur Coat"
+        $ event_name = _("Light Brown Fur Coat")
         
         "Even though I'm flustered and perplexed,\nI slip my feet into my sandals at the entrance\nto chase after him. Then at that moment."
     
@@ -1225,7 +1225,7 @@ label shun20:
     ##############################################
     label shun20_play_accept:
 
-        $ event_name = "Nighttime invitation"
+        $ event_name = _("Nighttime invitation")
             
         scene black with sdis
         scene mountain_path night with blind_skinny
@@ -1305,7 +1305,7 @@ label shun20:
     ####################################################
     label shun20_visit_tatsuki:
 
-        $ event_name = "The Midoriya Family's Bowl"
+        $ event_name = _("The Midoriya Family's Bowl")
         
         show su 023 night with dis
         
@@ -1439,7 +1439,7 @@ label shun20:
     #############################################
     label shun20_visit_kounosuke:
         
-        $ event_name = "Chasing Kounosuke's Moon"
+        $ event_name = _("Chasing Kounosuke's Moon")
 
         scene black with blind_vert
         scene kouno_house_out night
@@ -1579,7 +1579,7 @@ label shun20:
     #############################################
     label shun20_exhausted:
             
-        $ event_name = "The Right Way to Spend a Summer Night"
+        $ event_name = _("The Right Way to Spend a Summer Night")
 
         scene black with sdis    
         stop music fadeout 1
@@ -1657,7 +1657,7 @@ label shun20:
     ######################################################
     label shun20_lap:
         
-        $ event_name = "Lap pillow"
+        $ event_name = _("Lap pillow")
 
         stop sound fadeout 1    
         play music free0428
@@ -1770,7 +1770,7 @@ label shun20:
     ##################################################    
     label shun20_kiss:   
     
-        $ event_name = "Saying Goodnight"
+        $ event_name = _("Saying Goodnight")
 
         stop sound fadeout 1
         pause 1
@@ -1841,7 +1841,7 @@ label shun20:
 #######################################################
 label kouya20:
     
-    $ event_name = "Lodgings and Staying Over"
+    $ event_name = _("Lodgings and Staying Over")
     hide screen ricefield20
     scene map
     pause .01
@@ -1996,7 +1996,7 @@ label kouya20:
     ########################################################
     label kouya20_accept:
             
-        $ event_name = "To Three Wonderful Days"
+        $ event_name = _("To Three Wonderful Days")
         
         "What was three choices was really one.{p}I'm so easy to understand."
         "Besides, it'd be bad if I didn't go, right?"
@@ -2011,7 +2011,7 @@ label kouya20:
         stop music fadeout 1
         scene black with sdis 
    
-        $ event_name = "Staying with Kouya Day 1"
+        $ event_name = _("Staying with Kouya Day 1")
 
         scene rice gray 
         show over red light
@@ -2316,7 +2316,7 @@ label kouya20:
     ###################################################
     label kouya20_crude:
         
-        $ event_name = "Wild Man"
+        $ event_name = _("Wild Man")
         
         fn "「Well,{w=.2} I guess it'd be a crude,\n\ \ rough kind of lifestyle. 」"
         
@@ -2355,7 +2355,7 @@ label kouya20:
     #################################################
     label kouya20_steady:
         
-        $ event_name = "Gentleman"
+        $ event_name = _("Gentleman")
       
         fn "「Hmm, I was thinking you were\n\ \ unexpectedly steady here. 」"
         
@@ -2396,7 +2396,7 @@ label kouya20:
     ###################################################
     label kouya20_dinner:
         
-        $ event_name = "A Restful Night"
+        $ event_name = _("A Restful Night")
     
         scene bedroom red with sdis
         
@@ -2564,7 +2564,7 @@ label kouya20:
 #######################################################
 label shin20:
     
-    $ event_name = "Shin-kun and Amaki-san"
+    $ event_name = _("Shin-kun and Amaki-san")
     
     play music piano3_015
     $ renpy.music.set_volume(0.8, 0.0, channel = "music")

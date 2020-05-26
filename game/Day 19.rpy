@@ -17,7 +17,7 @@ screen minasatomap19():
         imagebutton idle "a icon" hover "icon loop"  xpos 418 ypos 185  action Jump("kouya19") hovered Show("house19")  unhovered Hide("house19") hover_sound "av/audio/click_008.wav"    
     #elif favorite == "shun":    
     hbox:
-        text "{size=+30}August 19"
+        text _("{size=+30}August 19")
         at maptime
 
 ################################################
@@ -28,15 +28,15 @@ label day19:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 19
-    $ the_date = "August 19"
-    $ event_name = "８月19日"
+    $ the_date = _("August 19")
+    $ event_name = _("８月19日")
     
     if favorite == "kouya" or favorite == "juuichi":
         window hide
         play music birds_chirping
         
         scene sky01 
-        show text "{size=+130}August 19" at truecenter
+        show text _("{size=+130}August 19") at truecenter
         with Dissolve(.5)
     
         pause 3
@@ -66,7 +66,7 @@ label kouya19:
     hide screen house19
     scene map
     pause .01
-    $ event_name = "Live Concert"
+    $ event_name = _("Live Concert")
     scene hbroom with sdis
     play music daily01
     $ renpy.music.set_volume(0.7, 0.0, channel = "music")
@@ -124,7 +124,7 @@ label kouya19:
     scene black with sdis
     pause 3 
    
-    $ event_name = "After Everything"
+    $ event_name = _("After Everything")
 
     scene kazenari01 night with sdis
     play music shop03
@@ -326,7 +326,7 @@ label kouya19:
     stop music fadeout 3
     scene black with sdis  
   
-    $ event_name = "A Trivial Question"
+    $ event_name = _("A Trivial Question")
 
     scene market night
     show ka 002 night at center
@@ -374,7 +374,7 @@ label kouya19:
 #####################################################
 label juuichi19:
     
-    $ event_name = "A Midsummer Day's Dream"
+    $ event_name = _("A Midsummer Day's Dream")
 
     play music cicada01
     scene hbroom with dis
@@ -506,7 +506,7 @@ label juuichi19:
     #######################################################
     label juuichi19_cup:
             
-        $ event_name = "In the Mood for a Cup"
+        $ event_name = _("In the Mood for a Cup")
         
         fn "「Hm, I guess I'll take this one then. 」"
         "I rummage around in the bag, take out my ice cream,\nand set it on the table.{p}I hand Torahiko the other one."
@@ -551,7 +551,7 @@ label juuichi19:
     #########################################################
     label juuichi19_softserve:
             
-        $ event_name = "The Age of Softness"
+        $ event_name = _("The Age of Softness")
         
         fn "「Hm, I guess I'll take this one then. 」"
         "I rummage around in the bag, take out my ice cream,\nand set it on the table.{p}I hand Torahiko the other one."
@@ -582,7 +582,7 @@ label juuichi19:
     ###########################################################
     label juuichi19_talk:
             
-        $ event_name = "Something that Will Never Come True"
+        $ event_name = _("Something that Will Never Come True")
         
         stop music fadeout 5
         scene black with sdis
@@ -764,7 +764,7 @@ label juuichi19:
     #####################################################
     label juuichi19_lover:
             
-        $ event_name = "A Happy Ending"
+        $ event_name = _("A Happy Ending")
         
         "He's always been at my side,{w=.2}\nand he's always cherished me."
         "I always took that for granted,\nbut those are irreplaceable things."
@@ -834,7 +834,7 @@ label juuichi19:
     #######################################################
     label juuichi19_friend:
             
-        $ event_name = "The Cost of a Confession."
+        $ event_name = _("The Cost of a Confession.")
         
         "I repeat his confession to myself.{p}Do I love Torahiko?"
         "If I loved him,{w=.2} and accepted him as my boyfriend,{p}I should be full of happiness right now.{p}I don't feel that way."

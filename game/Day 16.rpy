@@ -7,7 +7,7 @@ screen candystore16:
         add "icon_kouya"
         at marketbounce2
     hbox:
-        text "Candy Store"
+        text _("Candy Store")
         xalign .5 yalign .52
         
 screen tatsukihouse16:
@@ -18,7 +18,7 @@ screen tatsukihouse16:
         add "icon_tatsu"
         at tatsukibounce2
     hbox: 
-        text "Tatsuki's House"
+        text _("Tatsuki's House")
         xalign .85 yalign .88
         
 screen minasatomap16():
@@ -29,7 +29,7 @@ screen minasatomap16():
     elif favorite == "tatsuki":
         imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki16") hovered Show("tatsukihouse16")  unhovered Hide("tatsukihouse16") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 16"
+        text _("{size=+30}August 16")
         at maptime
 
 #####################################################
@@ -40,8 +40,8 @@ label day16:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 16
-    $ the_date = "August 16"    
-    $ event_name = "８月16日"
+    $ the_date = _("August 16")    
+    $ event_name = _("８月16日")
     
     if favorite == "shun" and meet_gaku != True:
         jump day17
@@ -85,7 +85,7 @@ label map16:
 #######################################################
 label kounosuke16:    
     
-    $ event_name = "Call from Kounosuke"
+    $ event_name = _("Call from Kounosuke")
     
     scene hbroom with wipeleft
     play music cicada01
@@ -130,7 +130,7 @@ label kounosuke16:
     ################################################################
     label kounosuke16_yukiharu_yes:
         
-        $ event_name = "Kuri's Appliance Store"
+        $ event_name = _("Kuri's Appliance Store")
         
         scene black with Dissolve(1)
         scene kouno_house_out with wipe_right
@@ -194,7 +194,7 @@ label kounosuke16:
     #####################################################
     label kounosuke16_yukiharu_no:
         
-        $ event_name = "Little Tanuki"
+        $ event_name = _("Little Tanuki")
         
         scene black with Dissolve(1)
         scene kouno_house_out with wipe_right
@@ -271,7 +271,7 @@ label kounosuke16:
     ###########################################################
     label kounosuke16_bedroom:
         
-        $ event_name = "Kounosuke's Ambition"
+        $ event_name = _("Kounosuke's Ambition")
         
         show bedroom with Dissolve(1)
         
@@ -329,7 +329,7 @@ label kounosuke16:
     #########################################################
     label kounosuke16_photos_yes:
         
-        $ event_name = "Kounosuke's photos"
+        $ event_name = _("Kounosuke's photos")
         show ko 003 with dis
         
         ko "「Ta-da! 」"
@@ -361,7 +361,7 @@ label kounosuke16:
     #######################################################
     label kounosuke16_photos_no:
         
-        $ event_name = "Kounosuke's grand plan"
+        $ event_name = _("Kounosuke's grand plan")
         show ko 003 with dis
         
         ko "「Ta-da! 」"
@@ -426,7 +426,7 @@ label kounosuke16:
     #################################################
     label kounosuke16_plan:
         
-        $ event_name = "Unextraordinary Tanuki"
+        $ event_name = _("Unextraordinary Tanuki")
         show ko 007 with dis
         
         ko "「Hmm, they're not any good, are they... 」"
@@ -579,7 +579,7 @@ label kounosuke16:
 #######################################################
 label tatsuki16:
     
-    $ event_name = "Unexpected!"
+    $ event_name = _("Unexpected!")
 
     scene map
     hide screen tatsukihouse16
@@ -974,7 +974,7 @@ label tatsuki16:
 
     scene black with sdis
 
-    $ event_name = "Curry for Dinner"
+    $ event_name = _("Curry for Dinner")
 
     play music daily02
     $ renpy.music.set_volume(0.7, 0.0, channel = "music")
@@ -1784,7 +1784,7 @@ label tatsuki16:
 
     scene black with sdis
     
-    $ event_name = "Ready for bed?"
+    $ event_name = _("Ready for bed?")
 
     stop music fadeout 1.5
     scene old_house_inside with sdis
@@ -2125,7 +2125,7 @@ label shun16:
     "Sometimes it's necessary to be strict,\neven if I think he's cute.{w} Hmm."
     "I thump him with my hand while he's rolled up\ninto a ball, then looked around the room."
     
-    $ event_name = "Well-ordered Room"
+    $ event_name = _("Well-ordered Room")
     
     "This desk seems easy to use,\nthere's dictionaries lined up within reach."
     "Writing tools are fit properly into the pen stand.{p}I can't even see any eraser pieces on it."
@@ -2153,7 +2153,7 @@ label shun16:
     
     "His eyes are full of anticipation.{p}Ooh, at times like this I why can't\nI ever think of anything...?"
     
-    $ event_name = "The Whole Story"
+    $ event_name = _("The Whole Story")
     
     fn "「B-by the way, why the heck did you faint? 」"
     
@@ -2230,7 +2230,7 @@ label shun16:
     ####################################################
     label shun16_plans_camping:
 
-        $ event_name = "Things in Particular"
+        $ event_name = _("Things in Particular")
         
         fn "「Don't you think that if you had told everybody\n\ \ about Bon Festival and gone camping another day,\n\ \ you wouldn't have had this burden placed on you? 」"
         su "「I-I'm sorry...{p}\ \ Because you said camping,\n\ \ I cleared out my plans for that day. 」"
@@ -2250,7 +2250,7 @@ label shun16:
     #####################################################
     label shun16_plans_festival:
         
-        $ event_name = "Things in Particular"
+        $ event_name = _("Things in Particular")
         
         fn "「You should have changed your\n\ \ plans for the Bon Festival. 」"
         fn "「If you said the right things about camping,{p}\ \ even someone from your family would understand. 」"
@@ -2295,7 +2295,7 @@ label shun16:
     #######################################################
     label shun16_plans_discuss:
         
-        $ event_name = "Things in Particular"
+        $ event_name = _("Things in Particular")
         
         fn "「You should have talked about it.{p}\ \ If you would've said something we could\n\ \ have decided when we were going camping afterwards. 」"
         su "「B-but that would have caused trouble for everybody,\n\ \ we went through all that trouble to decide when,\n\ \ what to do, what to bring, I was excited. 」"
@@ -2362,7 +2362,7 @@ label shun16:
     ###############################################################    
     label shun16_evening:
             
-        $ event_name = "Evening time"
+        $ event_name = _("Evening time")
 
         stop music fadeout 1
         scene black with sdis
@@ -2483,7 +2483,7 @@ label shun16:
         scene black with sdis
         scene shun_house_living with sdis 
    
-        $ event_name = "Gaku-san's Supplies"
+        $ event_name = _("Gaku-san's Supplies")
         
         "Finished with our hashed meat\nand chicken on rice, we took a rest."
         "Then, Shun-kun boiled me in the bath.{p}\"Guests take a bath before anybody else♪\"{w=.2} he said."    
@@ -2554,7 +2554,7 @@ label shun16:
             $ last = persistent.name_last
             $ day = 16
             
-        $ event_name = "Muffled Sensation"
+        $ event_name = _("Muffled Sensation")
 
         play music free51
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -2889,14 +2889,14 @@ label shun16:
         
         stop music fadeout 1
 
-        $ event_name = "Muzzle Sense"
+        $ event_name = _("Muzzle Sense")
 
         jump end16    
     
 #######################################################
 label kouya16:    
     
-    $ event_name = "Ticket Riots"
+    $ event_name = _("Ticket Riots")
     scene map
     hide screen candystore16
 
@@ -3115,7 +3115,7 @@ label kouya16:
     stop music fadeout 3
     scene black with sdis  
   
-    $ event_name = "Weak Point in the Three-way Deadlock"
+    $ event_name = _("Weak Point in the Three-way Deadlock")
 
     scene candystorein
     show ka 014 at center
@@ -3383,7 +3383,7 @@ label kouya16:
 
     scene black with sdis  
   
-    $ event_name = "I'll Take It... "
+    $ event_name = _("I'll Take It... ")
   
     play music ambience01
     
@@ -3470,7 +3470,7 @@ label kouya16:
     
     scene black with sdis
     
-    $ event_name = "\"I'll Take It\" Ghost"
+    $ event_name = _("\"I'll Take It\" Ghost")
     scene candystorein with sdis
     show ka 001 at midleft
     show ko 005 at midright
@@ -3547,7 +3547,7 @@ label kouya16:
 #######################################################
 label shin16:
     
-    $ event_name = "Let's go hang out at Shin-kun's!"
+    $ event_name = _("Let's go hang out at Shin-kun's!")
 
     play music free0211
     $ renpy.music.set_volume(0.8, 0.0, channel = "music")    
@@ -3795,7 +3795,7 @@ label shin16:
     ########################################################
     label shin16_desk_top:
             
-        $ event_name = "Secret Diary"
+        $ event_name = _("Secret Diary")
         
         "Next to the desks is another shelf, and it looks like\nthere are even more books placed there.{p}There are dictionaries and reference books."
         "...?{p}However, among them there's one with no title,\nand it obviously looks different from the rest."
@@ -3899,7 +3899,7 @@ label shin16:
     ###########################################################
     label shin16_desk_inside:
             
-        $ event_name = "Cell Phone"
+        $ event_name = _("Cell Phone")
         
         "There's a key to the drawer on the desk,\nbut the key went in without a hitch.{p}I really am starting to want to know what's inside."
         
@@ -4030,7 +4030,7 @@ label shin16:
     ##############################################################
     label shin16_sit:
         
-        $ event_name = "Where should we eat?"
+        $ event_name = _("Where should we eat?")
         
         stop music fadeout 1
         
@@ -4133,7 +4133,7 @@ label shin16:
     ################################################################
     label shin16_snacks:
             
-        $ event_name = "Snack Time"
+        $ event_name = _("Snack Time")
 
         hide si with sdis
         

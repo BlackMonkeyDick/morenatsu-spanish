@@ -7,7 +7,7 @@ screen shrine18:
         add "icon_shun"
         at shrinebounce2
     hbox:
-        text "Minasato Shrine"
+        text _("Minasato Shrine")
         xalign .16 yalign .12
 
 screen minasatomap18:
@@ -15,7 +15,7 @@ screen minasatomap18:
     add "mapdate"
     imagebutton idle "a icon" hover "icon loop" xpos 164 ypos 104 action Jump("shun18") hovered Show("shrine18")  unhovered Hide("shrine18") hover_sound "av/audio/click_008.wav" 
     hbox:
-        text "{size=+30}August 18"
+        text _("{size=+30}August 18")
         at maptime
 
 ################################################
@@ -26,8 +26,8 @@ label day18:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 18
-    $ the_date = "August 18"
-    $ event_name = "８月18日"
+    $ the_date = _("August 18")
+    $ event_name = _("８月18日")
     
     if favorite == "shun":        
         window hide
@@ -58,7 +58,7 @@ label map18:
 #################################################
 label shun18:
     
-    $ event_name = "The Strongest Weapon and Shin"
+    $ event_name = _("The Strongest Weapon and Shin")
 
     scene map
     hide screen shrine18
@@ -86,7 +86,7 @@ label shun18:
     pause 1
     scene black with sdis
     
-    $ event_name = "Legend of the Sky Dragon King"
+    $ event_name = _("Legend of the Sky Dragon King")
 
     scene path 
     show over black 
@@ -152,7 +152,7 @@ label shun18:
     
     scene black with wipeleft
 
-    $ event_name = "Legend of the River Dragon King"
+    $ event_name = _("Legend of the River Dragon King")
 
     scene rice 
     show over black 
@@ -236,7 +236,7 @@ label shun18:
     su "「O-okay... 」"
     scene black with wipeleft 
   
-    $ event_name = "Which One is an Ally?"
+    $ event_name = _("Which One is an Ally?")
 
     scene shrine 
     show over black
@@ -383,7 +383,7 @@ label shun18:
     #####################################################
     label shun18_support_shun:
 
-        $ event_name = "Which Side...?"
+        $ event_name = _("Which Side...?")
             
         stop music fadeout 1
         pause 1
@@ -500,7 +500,7 @@ label shun18:
     ##################################################
     label shun18_support_shin:
 
-        $ event_name = "Which Side...?"
+        $ event_name = _("Which Side...?")
 
         stop music fadeout 1
         pause 1
@@ -546,7 +546,7 @@ label shun18:
     #################################################
     label shun18_support_neither:
 
-        $ event_name = "Which Side...?"
+        $ event_name = _("Which Side...?")
         
         stop music fadeout 1
         pause 1

@@ -6,8 +6,8 @@ label day17:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 17
-    $ the_date = "August 17"
-    $ event_name = "８月17日"
+    $ the_date = _("August 17")
+    $ event_name = _("８月17日")
     
     if favorite == "shun" and meet_gaku != True:
         jump day18
@@ -34,7 +34,7 @@ label day17:
 ################################################################
 label kounosuke17:
   
-    $ event_name = "Taking pictures with Kounosuke"
+    $ event_name = _("Taking pictures with Kounosuke")
 
     scene hbroom with sdis
     play music free0213 fadein 1.5 
@@ -867,7 +867,7 @@ label kounosuke17:
         fn "「Ah, that would be nice, wouldn't it.{p}\ \ Let's go! 」"
         ko "「Yeah. 」"
     
-        $ event_name = "Memories at sunset"
+        $ event_name = _("Memories at sunset")
         
         scene school01 red with wipe_up_slow
         pause .2
@@ -1150,7 +1150,7 @@ label kounosuke17:
 ################################################################
 label shun17:
 
-    $ event_name = "The Next Morning"
+    $ event_name = _("The Next Morning")
 
     scene shun_bedroom_day with sdis
     
