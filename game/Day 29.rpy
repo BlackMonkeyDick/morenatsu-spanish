@@ -6,15 +6,15 @@ label day29:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 29
-    $ the_date = "August 29"
-    $ event_name = "８月29日"
+    $ the_date = _("August 29")
+    $ event_name = _("８月29日")
     
     if favorite == "tatsuki" or favorite =="kounosuke" or favorite == "kouya" or favorite == "juuichi":
         window hide
         play music birds_chirping
             
         scene sky01 
-        show text "{size=+130}August 29" at truecenter
+        show text _("{size=+130}August 29") at truecenter
         with Dissolve(.5)
         
         pause 3
@@ -29,7 +29,7 @@ label day29:
 ##########################################################
 label kounosuke29:
 
-    $ event_name = "What was promised"
+    $ event_name = _("What was promised")
 
     play music cicada01 fadein 3
     $ renpy.music.set_volume(0.4, 0.0, channel = "music")
@@ -47,7 +47,7 @@ label kounosuke29:
     ##########################################################
     label kounosuke29_homework:
         
-        $ event_name = "The Words I Could Not Say"        
+        $ event_name = _("The Words I Could Not Say")        
         
         stop music fadeout 7
         
@@ -165,7 +165,7 @@ label kounosuke29:
             $ event_name = "A Lover's Proof"
             scene hbroom with dis
         
-        $ event_name = "A Lover's Proof"
+        $ event_name = _("A Lover's Proof")
     
         show ko 005 at center with dis
         
@@ -784,7 +784,7 @@ label kounosuke29:
 ##########################################################
 label tatsuki29:
     
-    $ event_name = "Feeling the Wind"
+    $ event_name = _("Feeling the Wind")
 
     play music wind_noise fadein 5
     scene prairie with sdis
@@ -866,7 +866,7 @@ label tatsuki29:
     ######################################################
     label tatsuki29_friends:
 
-        $ event_name = "Our Friends"
+        $ event_name = _("Our Friends")
         
         who "「Heeey, over here! Here! 」"
         "As we were approaching the runway,\nwe heard a voice calling out from somewhere."
@@ -1067,7 +1067,7 @@ label tatsuki29:
     ############################################################    
     label tatsuki29_destruction:
 
-        $ event_name = "Becoming a Legend"
+        $ event_name = _("Becoming a Legend")
         
         "What do we have here..."
         "There's a red button here,\nwith a skull-and-crossbones drawn on it.{p}It's not a self-destruct button, right?"
@@ -1185,7 +1185,7 @@ label tatsuki29:
     ###################################################    
     label tatsuki29_flying:
 
-        $ event_name = "Skylab"
+        $ event_name = _("Skylab")
         
         stop music fadeout 1.5
         play sound plane_engine loop
@@ -1243,7 +1243,7 @@ label tatsuki29:
         scene sky with dis
         scene black with wipeleft
 
-        $ event_name = "Embers"
+        $ event_name = _("Embers")
 
         stop music fadeout 2
         stop sound
@@ -1630,7 +1630,7 @@ label tatsuki29:
 ##########################################################
 label kouya29:
     
-    $ event_name = "What Lies Ahead of Him"
+    $ event_name = _("What Lies Ahead of Him")
     
     play music piano4_001
     scene kouya_house_out night
@@ -1667,7 +1667,7 @@ label kouya29:
 
     scene black with rotation
     
-    $ event_name = "The Last Gate"
+    $ event_name = _("The Last Gate")
     
     "As the door made its usual sound,{w=.2}\nit opened onto a familiar corridor\nthat looked untouched by time."
     "Since the lights weren't turned on,{w=.2}\nthe light coming from the living room\nwas the only illumination."
@@ -1697,7 +1697,7 @@ label kouya29:
     
     scene black with wipe_right
     
-    $ event_name = "Last Stop of the Ticket Stub"
+    $ event_name = _("Last Stop of the Ticket Stub")
 
     scene kouya_house_in with wipe_right
     play sound2 dishes
@@ -1862,7 +1862,7 @@ label kouya29_sex:
         $ last = persistent.name_last
         $ day = 29
    
-    $ event_name = "His Tune"
+    $ event_name = _("His Tune")
 
     scene kouya_house_out night with dis
     play sound night_insects loop
@@ -1985,7 +1985,7 @@ label kouya29_sex:
     
     "Our lips pressed together."
     
-    $ event_name = "The Form of Gratitude"
+    $ event_name = _("The Form of Gratitude")
     
     "Our lips separated, almost immediately."
     "My mouth opened up to protest at that,{w=.2}\nand as though he'd waited for it,\nKouya took my lips again."
@@ -2250,7 +2250,7 @@ label kouya29_sex:
 ##########################################################
 label juuichi29:
     
-    $ event_name = "Dreaming of the Two from that Day"
+    $ event_name = _("Dreaming of the Two from that Day")
     
     scene forest01 night with sdis
     play music piano3_014
@@ -2304,7 +2304,7 @@ label juuichi29:
     fn "「...{w=.2}I still have feelings for him. 」"
     "I weakly mutter to myself."
     
-    $ event_name = "At the Bottom of Discouragement and Despair"
+    $ event_name = _("At the Bottom of Discouragement and Despair")
     
     scene black with sdis
     scene hbroom with sdis
@@ -2329,7 +2329,7 @@ label juuichi29:
     "I have a feeling of guilt I can't be silent about any\nlonger.{w} But... {w=.2}I'm more scared of seeing Juuichi-san."
     "Being rejected by him, {w=.2}that's what I'm scared of."
     
-    $ event_name = "An Unexpected Visitor"
+    $ event_name = _("An Unexpected Visitor")
     
     play sound ChimeA
     
@@ -2447,7 +2447,7 @@ label juuichi29:
     "Kyouji smiling tempts me into smiling as well.{p}Jeez... {w=.2}I wonder why there's so many strong people\naround me."
     "I prepare myself,{w=.2}\nthen start telling him the events of the other day."
     
-    $ event_name = "Facing Each Other"
+    $ event_name = _("Facing Each Other")
     
     stop music fadeout 5
     scene black with sdis
@@ -2547,7 +2547,7 @@ label juuichi29:
     ###########################################################        
     label juuichi29_kodori:
             
-        $ event_name = "The Search for the Crescent"
+        $ event_name = _("The Search for the Crescent")
         
         stop music fadeout 5
         scene black with vsdis
@@ -2682,7 +2682,7 @@ label juuichi29:
         "I look at the seats behind me.{p}Although everybody is wearing Judo gi,{w=.2}\nunfortunately there's no sign of Juuichi-san."
         "Oh well, {w=.2}I guess I'll have to wait for Ten-san to get\nback.{w} As I sit on one of the chairs,{w=.2}\nI hear a familiar high-pitched voice call out to me."
         
-        $ event_name = "As Told by the Swining Tail"
+        $ event_name = _("As Told by the Swining Tail")
         
         show su 002 at center with dis
         
@@ -2734,7 +2734,7 @@ label juuichi29:
         show arena at vshake
         play sound bom35
         
-        $ event_name = "Shun, SAMA!"
+        $ event_name = _("Shun, SAMA!")
         
         fn "「SHUN-SAMAAAAAA?! 」"
         "What the heck happened that made\nsomebody with that scary of a face\nstart using that honorific with Shun-kun?"
@@ -2781,7 +2781,7 @@ label juuichi29:
         fn "「WHAAAAAAAAAAAAT?! 」"
         "I accidentally shout upon hearing something I never\nimagined I would."
         
-        $ event_name = "Japan's Summer, The Kodori Family's Summer"
+        $ event_name = _("Japan's Summer, The Kodori Family's Summer")
         
         $ encounter_ten = True#!#
         
@@ -2806,7 +2806,7 @@ label juuichi29:
         
         su "「Oh, {w=.2}[fn]-san, {w=.2}Ten-san.\n\ \ There's Juuichi-san! 」"
         
-        $ event_name = "Is there Hope?"
+        $ event_name = _("Is there Hope?")
         
         play music free0456 fadein 4
         
@@ -2889,7 +2889,7 @@ label juuichi29:
         fn "{size=+25}「JUUICHI-SAN!! 」"
         fn "{size=+25}「YOU CAN DO IT!! 」"
         
-        $ event_name = "And Then, There was Hope"
+        $ event_name = _("And Then, There was Hope")
 
         $ renpy.music.set_volume(0.75, 10.0, channel = "music")
         
@@ -3050,7 +3050,7 @@ label juuichi29:
         "The classes at school were relatively one-sided,{w=.2}\nbut that must be unique to amateurs or something."
         "When two people who train every day clash,{w=.2}\nit's completely different."
         
-        $ event_name = "Reunion for the First Time in a Week"
+        $ event_name = _("Reunion for the First Time in a Week")
         
         stop music fadeout 1.5
         
@@ -3118,7 +3118,7 @@ label juuichi29:
         "The reason we're having this conversation in the\nfirst place is because of my confession."
         "I should be apologizing, {w=.2}not Juuichi-san...{p}Wait, {w=.2}now I'm just back to the beginning."
         
-        $ event_name = "Proof of Reconciliation"
+        $ event_name = _("Proof of Reconciliation")
         
         "Think, think.{w} ...Eventually I give up trying to find\nthe right words and stick my right hand out towards\nJuuichi-san."
         fn "「Juuichi-san.{w} How about we shake hands to reconcile?{p}\ \ Even if it is hard to say whether or not we'll have\n\ \ a clean slate just by doing this. 」"
@@ -3157,7 +3157,7 @@ label juuichi29:
     ################################################
     label juuichi29_wolf:
         
-        $ event_name = "That Ferocious Man"
+        $ event_name = _("That Ferocious Man")
         
         stop music fadeout 5
         scene black with vsdis
@@ -3481,7 +3481,7 @@ label juuichi29:
         "The classes at school were relatively one-sided,{w=.2}\nbut that must be unique to amateurs or something."
         "When two people who train every day clash,{w=.2}\nit's completely different."
         
-        $ event_name = "Reunion for the First Time in a Week"
+        $ event_name = _("Reunion for the First Time in a Week")
 
         stop music fadeout 1.5
         
@@ -3570,7 +3570,7 @@ label juuichi29:
         "The reason we're having this conversation in the\nfirst place is because of my confession."
         "I should be apologizing, {w=.2}not Juuichi-san...{p}Wait, {w=.2}now I'm just back to the beginning."
         
-        $ event_name = "Proof of Reconciliation"
+        $ event_name = _("Proof of Reconciliation")
         
         "Think, think.{w} ...Eventually I give up trying to find\nthe right words and stick my right hand out towards\nJuuichi-san."
         fn "「Juuichi-san.{w} How about we shake hands to reconcile?{p}\ \ Even if it is hard to say whether or not we'll have\n\ \ a clean slate just by doing this. 」"
@@ -3607,7 +3607,7 @@ label juuichi29:
     #################################################################
     label juuichi29_ten_fight:
             
-        $ event_name = "War Cry Chat"
+        $ event_name = _("War Cry Chat")
 
         play music free02 fadein 3
         
@@ -3634,7 +3634,7 @@ label juuichi29:
         "Even though I'm talking to myself here...{w=.2}\nthat'd be more than likely."
         clubmem "「Oh, {w=.2}looks like they're getting started. 」"
         
-        $ event_name = "Their Final Showdown"
+        $ event_name = _("Their Final Showdown")
 
         play music free27 fadein 2.5
         
@@ -3704,7 +3704,7 @@ label juuichi29:
     ##################################################
     label juuichi29_rival_ten:
         
-        $ event_name = "Rivals Then, Friends Now"
+        $ event_name = _("Rivals Then, Friends Now")
     
         show tn 001 at midright
         show ju 318 at midleft
@@ -3801,7 +3801,7 @@ label juuichi29:
     #############################################################
     label juuichi29_rival_captain:
             
-        $ event_name = "Rivals Then, Friends Now"
+        $ event_name = _("Rivals Then, Friends Now")
         
         show tn 001 at midright
         show ju 318 at midleft
@@ -3908,7 +3908,7 @@ label juuichi29:
     #######################################################
     label juuichi29_confession:
             
-        $ event_name = "Words Reflected in the Sunset"
+        $ event_name = _("Words Reflected in the Sunset")
         
         scene black with wipe_right
         pause 1
@@ -4042,11 +4042,11 @@ label juuichi29:
             $ first = persistent.name_first
             $ last = persistent.name_last
             $ day = 29
-            $ event_name = "Deep Twilight, Strong Feelings"
+            $ event_name = _("Deep Twilight, Strong Feelings")
             
             scene arena_outside red with dis
             
-        $ event_name = "Deep Twilight, Strong Feelings"
+        $ event_name = _("Deep Twilight, Strong Feelings")
 
         hide ju with dis
         stop music fadeout 10
@@ -4252,7 +4252,7 @@ label juuichi29:
         fn "「...Ngh! 」"
         "Juuichi-san wraps his arms around my back and\nbuttocks, {w=.2}firmly embracing my body.{w} What the? I've\nbeen released from the clutches of gravity."
         
-        $ event_name = "When Mind and Body are United"
+        $ event_name = _("When Mind and Body are United")
         
         scene ev_juuichi_1a with sdis
         

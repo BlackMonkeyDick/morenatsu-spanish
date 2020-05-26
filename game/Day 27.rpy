@@ -6,8 +6,8 @@ label day27:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 27
-    $ the_date = "August 27"
-    $ event_name = "８月27日"
+    $ the_date = _("August 27")
+    $ event_name = _("８月27日")
     
     if favorite == "kouya" or favorite == "shin":
         window hide
@@ -30,7 +30,7 @@ label day27:
 #########################################################
 label kouya27:
     
-    $ event_name = "Your Equipment is a Towel Bedsheet"
+    $ event_name = _("Your Equipment is a Towel Bedsheet")
 
     scene black with dis    
     
@@ -130,7 +130,7 @@ label kouya27:
     stop music fadeout 3
     scene black with sdis  
   
-    $ event_name = "Hop, Step--"
+    $ event_name = _("Hop, Step--")
 
     scene studio with sdis    
     play music free0211
@@ -268,7 +268,7 @@ label kouya27:
     stop music fadeout 3
     scene black with sdis 
    
-    $ event_name = "-Jump"
+    $ event_name = _("-Jump")
 
     play music free04
 
@@ -522,7 +522,7 @@ label kouya27:
 #########################################################    
 label shin27:
     
-    $ event_name = "Onward to Shin's House"
+    $ event_name = _("Onward to Shin's House")
     
     $ renpy.music.set_volume(0.8, 0.0, channel = "music")
 
@@ -538,7 +538,7 @@ label shin27:
     #########################################################
     label shin27_normalend:
             
-        $ event_name = "Shattered Determination"
+        $ event_name = _("Shattered Determination")
         
         stop music fadeout 1.5
         
@@ -566,7 +566,7 @@ label shin27:
         stop music fadeout 1.5
         pause 1.5
         
-        $ event_name = "Farewell"
+        $ event_name = _("Farewell")
         
         scene bstop with dis
         play music melodious02
@@ -869,7 +869,7 @@ label shin27:
         extend "Don't speak like you know anything about me! 」"
         fn "「But... 」"
         
-        $ event_name = "The Word He Desires"
+        $ event_name = _("The Word He Desires")
         
         show si 005 with dis
         
@@ -1085,7 +1085,7 @@ label shin27:
         si "「I...{p}\ \ It's okay to...{w=.2}\n\ \ be in love with you? 」"
         fn "「...{w} yeah. 」"
         
-        $ event_name = "Shattered Shell"
+        $ event_name = _("Shattered Shell")
 
         show si 008 big at center_big with dis
         
@@ -1132,11 +1132,11 @@ label shin27:
             $ first = persistent.name_first
             $ last = persistent.name_last
             $ day = 27
-            $ event_name = "I Love You"
+            $ event_name = _("I Love You")
             
             scene black with dis
             
-        $ event_name = "I Love You"
+        $ event_name = _("I Love You")
     
         play music wind_noise
         $ renpy.music.set_volume(0.6, 0.0, channel = "music")
@@ -1354,7 +1354,7 @@ label shin27:
     ###########################################################
     label shin27_childhood_memory:
             
-        $ event_name = "Early Childhood"
+        $ event_name = _("Early Childhood")
         
         "My body is sinking.{p}I can't breathe.{p}Help me...{w} help me!"
     
@@ -1491,7 +1491,7 @@ label shin27:
     #####################################################
     label shin27_childhood_goodbye:
             
-        $ event_name = "This isn't a Dream, is it?"
+        $ event_name = _("This isn't a Dream, is it?")
         
         scene black with sdis
         scene bstop gray 
@@ -1528,7 +1528,7 @@ label shin27:
     
         scene black with sdis    
         
-        $ event_name = "Because it's my own Decision"
+        $ event_name = _("Because it's my own Decision")
     
         scene shin_bedroom red
         show si 001 red at center
@@ -1600,7 +1600,7 @@ label shin27:
     ##########################################################
     label shin27_number_promise:
         
-        $ event_name = "A Promise"
+        $ event_name = _("A Promise")
         
         $ shin_trueend = True
         scene shin_bedroom red

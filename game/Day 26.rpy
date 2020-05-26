@@ -6,15 +6,15 @@ label day26:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 26
-    $ the_date = "August 26"
-    $ event_name = "８月26日"
+    $ the_date = _("August 26")
+    $ event_name = _("８月26日")
     
     if favorite == "kounosuke" or favorite ==  "shun" or favorite == "kouya" or favorite == "shin":
         window hide
         play music birds_chirping
             
         scene sky01 
-        show text "{size=+130}August 26" at truecenter
+        show text _("{size=+130}August 26") at truecenter
         with Dissolve(.5)
         
         pause 3
@@ -30,7 +30,7 @@ label day26:
 ######################################################
 label kounosuke26:
     
-    $ event_name = "Encouragement"
+    $ event_name = _("Encouragement")
 
     scene hbroom with sdis
     play music cicada01
@@ -195,7 +195,7 @@ label kounosuke26:
     ######################################################
     label kounosuke26_excuse:
         
-        $ event_name = "Reason For Giving Up"
+        $ event_name = _("Reason For Giving Up")
         
         fn "「U-umm. That thing from before,{p}\ \ are you still worrying about it? 」"
         
@@ -266,7 +266,7 @@ label kounosuke26:
     ##########################################################
     label kounosuke26_encourage:
 
-        $ event_name = "Hunting a Tricky Tanuki"
+        $ event_name = _("Hunting a Tricky Tanuki")
         
         "Th-this is pretty serious.\nHow should I talk to him..."
         
@@ -385,7 +385,7 @@ label kounosuke26:
 ######################################################
 label shun26:
     
-    $ event_name = "Some Kind of Idea"
+    $ event_name = _("Some Kind of Idea")
     
     scene hentry night with dis
     play sound night_insects loop fadein 1
@@ -547,7 +547,7 @@ label shun26:
     pause 1
     scene black with wipe_dr
 
-    $ event_name = "In the Depths of the Woods"
+    $ event_name = _("In the Depths of the Woods")
 
     play sound musi2 loop
     pause .2
@@ -647,7 +647,7 @@ label shun26:
     pause 1
     scene black with sdis 
    
-    $ event_name = "Iwao and Gaku's Feud"
+    $ event_name = _("Iwao and Gaku's Feud")
 
     scene forest01 night
     show su 012 night at center
@@ -745,7 +745,7 @@ label shun26:
     stop music fadeout 1
     pause 1    
 
-    $ event_name = "Promise from 5 Years Ago"
+    $ event_name = _("Promise from 5 Years Ago")
 
     scene forest01 night
     show su 001 night at center
@@ -827,7 +827,7 @@ label shun26:
     pause 1
     scene forest01 night with dis 
    
-    $ event_name = "The Same Place"
+    $ event_name = _("The Same Place")
     
     play music free58
     $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -935,11 +935,11 @@ label shun26_sex:
         $ first = persistent.name_first
         $ last = persistent.name_last
         $ day = 26
-        $ event_name = "Muffled continued"
+        $ event_name = _("Muffled continued")
         
         scene black with dis
     
-    $ event_name = "Muffled continued"
+    $ event_name = _("Muffled continued")
 
     scene forest01 night
     show su 017 big night at center_big
@@ -1065,7 +1065,7 @@ label shun26_sex:
     
     pause 1  
   
-    $ event_name = "In Order"
+    $ event_name = _("In Order")
 
     play sound musi2 loop 
     
@@ -1153,7 +1153,7 @@ label shun26_sex:
     su "「Yes... Nnn. 」"
     fn "「Well then... let's undress. 」"
     
-    $ event_name = "The Woods and the Naked Body"
+    $ event_name = _("The Woods and the Naked Body")
     
     show su 022 big night with dis
     
@@ -1280,7 +1280,7 @@ label shun26_sex:
     
     scene black with rotation
 
-    $ event_name = "Unsealing"
+    $ event_name = _("Unsealing")
 
     scene forest01 night with rotation    
     show su 120 big night at center_big with sdis
@@ -1451,7 +1451,7 @@ label shun26_sex:
     fn "「It's okay. You'll get to cum soon. 」"
     "While calming him down as he talks in a sad voice,\nI start to prepare for what's next.{p}I'm also getting close to my limit."
     
-    $ event_name = "Union"
+    $ event_name = _("Union")
     
     show su 122 night with dis
     
@@ -1666,7 +1666,7 @@ label shun26_sex:
         
     $ persistent.event_shun2 = True    
 
-    $ event_name = "On the Way Back"
+    $ event_name = _("On the Way Back")
 
     scene path night with sdis
     play sound night_insects loop
@@ -1851,7 +1851,7 @@ label shun26_sex:
 ######################################################
 label kouya26:
     
-    $ event_name = "Chain Connection"
+    $ event_name = _("Chain Connection")
 
     play music daily03
     scene studio with dis
@@ -2059,7 +2059,7 @@ label kouya26:
     stop music fadeout 3
     scene black with sdis 
    
-    $ event_name = "A Complicated Heart"
+    $ event_name = _("A Complicated Heart")
 
     scene music_shop night with sdis
     
@@ -2156,7 +2156,7 @@ label kouya26:
     stop music fadeout 3
     scene black with sdis 
    
-    $ event_name = "One answer"
+    $ event_name = _("One answer")
    
     play music melodious03
     scene studio with sdis
@@ -2276,13 +2276,13 @@ label kouya26:
 ################################################    
 label kouya26_sex:
     
-    $ event_name = "Continuing Speech"
+    $ event_name = _("Continuing Speech")
 
     if persistent.replay == True:
         $ first = persistent.name_first
         $ last = persistent.name_last
         $ day = 26
-        $ event_name = "Continuing Speech"
+        $ event_name = _("Continuing Speech")
         
         scene black with dis
         
@@ -2391,7 +2391,7 @@ label kouya26_sex:
     
     "Being so close to him,{w=.2} he felt so very warm."
     
-    $ event_name = "Two Lovers"
+    $ event_name = _("Two Lovers")
     
     "I didn't really understand where things were going,{w=.2}\nbut it felt so comfortable."
     "As I was wrapped up in this warmth,{w=.2}\na sense of inexpressible happiness filled me."
@@ -2637,7 +2637,7 @@ label kouya26_sex:
     "A unique taste filled my mouth.{p}It was a mysterious flavor."
     "After swallowing up the stickyness,{w=.2}\nI let go of Kouya's member."
     
-    $ event_name = "Limit Break"
+    $ event_name = _("Limit Break")
     
     ka "「[fn]. 」"
     "I pushed myself up when he called my name.{p}My head felt empty,{w=.2} and I was irritated at\nat how slowly I seemed to be moving."
@@ -2664,7 +2664,7 @@ label kouya26_sex:
 ######################################################
 label shin26:
     
-    $ event_name = "Amaki wants to talk"
+    $ event_name = _("Amaki wants to talk")
     
     play music melodious08
     $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -2763,7 +2763,7 @@ label shin26:
     ##############################################
     label shin26_condemn:
             
-        $ event_name = "A Guardian's Duty"
+        $ event_name = _("A Guardian's Duty")
         
         fn "「N-no... 」"
         am "「It was about the time you came over though. 」"
@@ -2896,7 +2896,7 @@ label shin26:
     
     #########################################################
         
-        $ event_name = "Shin: Bad ending"
+        $ event_name = _("Shin: Bad ending")
         
         play sound bus_idling loop fadein 1
         $ renpy.music.set_volume(0.8, 0.0, channel = "sound")
@@ -2933,7 +2933,7 @@ label shin26:
     #########################################################
     label shin26_explain:
             
-        $ event_name = "A Friend's Company"
+        $ event_name = _("A Friend's Company")
         
         fn "「No, not really... 」"
         

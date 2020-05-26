@@ -7,8 +7,8 @@ label day30:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 30
-    $ the_date = "August 30"
-    $ event_name = "８月30日"
+    $ the_date = _("August 30")
+    $ event_name = _("８月30日")
     
     window hide
     play music birds_chirping                
@@ -48,7 +48,7 @@ label kounosuke30:
     ######################################################
     label kounosuke30_goodend:
         
-        $ event_name = "Once again, A Tanuki in the Forest"
+        $ event_name = _("Once again, A Tanuki in the Forest")
     
         show yk 001 at center with dis
         
@@ -227,7 +227,7 @@ label kounosuke30:
     ##################################################
     label kounosuke30_badend:
 
-        $ event_name = "Kounosuke"
+        $ event_name = _("Kounosuke")
     
         show ko 001 at center with dis
         
@@ -392,7 +392,7 @@ label kounosuke30:
     ##################################################
     label kounosuke30_promise:
 
-        $ event_name = "Recalled Promise"
+        $ event_name = _("Recalled Promise")
 
         play music night_insects fadein 2.5
         
@@ -414,7 +414,7 @@ label kounosuke30:
     #####################################################
     label kounosuke30_confession:
         
-        $ event_name = "Confession"
+        $ event_name = _("Confession")
             
         ko "「[fn], I love you.{p}\ \ I've always felt this way... and...{p}\ \ ...am I making you uncomfortable? 」"
         "Kounosuke's grip on my hand gets stronger.{p}It's like he'll never let go again.{p}Or like the clinging of a child. It's powerful."
@@ -688,10 +688,10 @@ label kounosuke30:
         play music birds_chirping
         
         $ day = 31
-        $ the_date = "August 31"
+        $ the_date = _("August 31")
         
         scene sky01 
-        show text "{size=+130}August 31" at truecenter 
+        show text _("{size=+130}August 31") at truecenter 
         with Dissolve(.5)            
         pause 3
         scene black with Dissolve(1)
@@ -928,7 +928,7 @@ label kounosuke30:
     #######################################################
     label kounosuke30_farewell_nana:
     
-        $ event_name = "Bye Bye"
+        $ event_name = _("Bye Bye")
     
         play music cicada01 fadein 5
         $ renpy.music.set_volume(0.5, 0.0, channel = "music")
@@ -956,7 +956,7 @@ label kounosuke30:
 #######################################################
 label tatsuki30:
     
-    $ event_name = "Every Day is my Favorite Day"
+    $ event_name = _("Every Day is my Favorite Day")
 
     play music cicada01 fadein 1.5
     $ renpy.music.set_volume(0.4, 0.0, channel = "music")
@@ -1237,11 +1237,11 @@ label tatsuki30:
             $ first = persistent.name_first
             $ last = persistent.name_last
             $ day = 30
-            $ event_name = "Night of the Meteor Shower"
+            $ event_name = _("Night of the Meteor Shower")
             
             scene starry_sky with sdis 
             
-        $ event_name = "Night of the Meteor Shower"
+        $ event_name = _("Night of the Meteor Shower")
             
         play music melodious09
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -1595,12 +1595,12 @@ label tatsuki30:
             
         $ persistent.event_tatsuki2 = True
         
-        $ event_name = "The Last Morning"
+        $ event_name = _("The Last Morning")
         
         window hide
         
         $ day = 31
-        $ the_date = "August 31"
+        $ the_date = _("August 31")
         
         scene sky01 
         play music birds_chirping
@@ -1650,7 +1650,7 @@ label tatsuki30:
     ##########################################
     label tatsuki30_tatsuki:
             
-        $ event_name = "Tatsuki"
+        $ event_name = _("Tatsuki")
 
         scene hbroom with dis
         scene hentry with wipeleft
@@ -1664,7 +1664,7 @@ label tatsuki30:
     ###########################################
     label tatsuki30_tappei:
         
-        $ event_name = "Tappei..."
+        $ event_name = _("Tappei...")
 
         scene hbroom with dis
         scene hentry with wipeleft
@@ -1686,7 +1686,7 @@ label tatsuki30:
     ############################################
     label tatsuki30_chuukichi:
 
-        $ event_name = "Chuukichi..."
+        $ event_name = _("Chuukichi...")
 
         scene hbroom with dis
         scene hentry with wipeleft
@@ -1746,7 +1746,7 @@ label tatsuki30:
     #################################################
     label tatsuki30_walk:
     
-        $ event_name = "At Summer's Conclusion"
+        $ event_name = _("At Summer's Conclusion")
     
         show ta 002 with dis
         
@@ -2143,7 +2143,7 @@ label tatsuki30:
 #######################################################
 label shun30:
     
-    $ event_name = "Wishing Stars Flowing Through the Night"
+    $ event_name = _("Wishing Stars Flowing Through the Night")
     
     "Before going to watch the meteor shower."
     
@@ -2189,7 +2189,7 @@ label shun30:
     "At least until tomorrow,\nthat is, the time when I leave,\nthere's no rain to worry about."
     "While waiting for the stars,\nI try asking Shun-kun\nhow things are going for him."
     
-    $ event_name = "Kodori Family Afterword"
+    $ event_name = _("Kodori Family Afterword")
     
     "After the disappearance incident,\nhis disposition is considerably different\nwhen he talks about the Kodori family."
     "Above all else, I'm relieved that\nhis expression doesn't get clouded."
@@ -2222,7 +2222,7 @@ label shun30:
     su "「Yes!{w} They don't argue anymore.{p}\ \ But they aren't good at having\n\ \ conversations sometimes. 」"
     fn "「They've been away from each other for so long,\n\ \ of course things are going\n\ \ to be awkward between them... Oh! 」"
     
-    $ event_name = "Wishes Come True"
+    $ event_name = _("Wishes Come True")
     
     scene starry_sky with wipe_down_slow    
     call set_star_stats from _call_set_star_stats_4 
@@ -2291,7 +2291,7 @@ label shun30:
     fn "「Shun-kun... 」"
     su "「I'll be waiting. 」"
     
-    $ event_name = "The Distance of Two People"
+    $ event_name = _("The Distance of Two People")
     
     "It's not like I won't be able to see him.{p}But it's not easy either. The distance between us\nwill return to the way it was a month ago."
     "Those 5 years when Shun-kun couldn't smile\nfrom the bottom of his heart.{p}The same time is beginning again."
@@ -2387,16 +2387,16 @@ label shun30:
     stop sound fadeout 1
     pause 1 
    
-    $ event_name = "Good Morning"
+    $ event_name = _("Good Morning")
 
     window hide
     play music birds_chirping    
     
     $ day = 31
-    $ the_date = "August 31"
+    $ the_date = _("August 31")
     
     scene sky01 
-    show text "{size=+130}August 31" at truecenter
+    show text _("{size=+130}August 31") at truecenter
     with Dissolve(.5)            
     pause 3
     scene black with Dissolve(1)
@@ -2429,7 +2429,7 @@ label shun30:
     pause 1
     scene black with dis #!#Replace with transition うねうね 
 
-    $ event_name = "I Had a Dream"
+    $ event_name = _("I Had a Dream")
 
     play sound birds_chirping loop
     scene hbroom with sdis
@@ -2441,7 +2441,7 @@ label shun30:
 
     scene black with wipeleft  
      
-    $ event_name = "The Beginning of the Last Day of August"
+    $ event_name = _("The Beginning of the Last Day of August")
 
     scene hentry with wipeleft
     play sound2 ChimeA 
@@ -2466,7 +2466,7 @@ label shun30:
     stop sound fadeout .5
     pause .5   
  
-    $ event_name = "To Meet"
+    $ event_name = _("To Meet")
 
     scene path
     show su 001 at center
@@ -2550,7 +2550,7 @@ label shun30:
     "Playing in the snow, the staples of the first\nthree days of the year, and everything else.\nI can be even closer this time."
     "Things I want to do continuously come to mind.{p}While I talk excitedly about this and that,\nbefore I realize it, we're at the bus stop."
     
-    $ event_name = "Words of Farewell"
+    $ event_name = _("Words of Farewell")
     
     scene bstop with wipeleft
     
@@ -2621,7 +2621,7 @@ label shun30:
     stop music fadeout 1
     pause 1  
   
-    $ event_name = "The Future Ahead of the Bus Stop"
+    $ event_name = _("The Future Ahead of the Bus Stop")
 
     play sound car000 loop
     scene bus with sdis
@@ -2667,7 +2667,7 @@ label shun30:
 #######################################################
 label kouya30:
     
-    $ event_name = "The Summer that Passed By"
+    $ event_name = _("The Summer that Passed By")
 
     scene hbroom with dis
     play music free10
@@ -2706,7 +2706,7 @@ label kouya30:
     stop music fadeout 3
     scene black with sdis 
    
-    $ event_name = "Shooting Star"
+    $ event_name = _("Shooting Star")
   
     play music free31
     scene hentry night with sdis
@@ -2868,16 +2868,16 @@ label kouya30:
     scene black with dis
     pause 3  
   
-    $ event_name = "Running Steps"
+    $ event_name = _("Running Steps")
 
     window hide
     play music birds_chirping  
     
     $ day = 31
-    $ the_date = "August 31"
+    $ the_date = _("August 31")
     
     scene sky01 
-    show text "{size=+130}August 31" at truecenter
+    show text _("{size=+130}August 31") at truecenter
     with Dissolve(.5)
     pause 3
     scene black with Dissolve(1)
@@ -3182,7 +3182,7 @@ label kouya30:
 #######################################################
 label shin30:
     
-    $ event_name = "Farewell Party"
+    $ event_name = _("Farewell Party")
     
     scene hbroom with sdis
     
@@ -3855,7 +3855,7 @@ label shin30:
     ##################################################
     label shin30_number_swap:
             
-        $ event_name = "Number Exchange"
+        $ event_name = _("Number Exchange")
 
         scene rice red with dis
             
@@ -3933,7 +3933,7 @@ label shin30:
     #####################################################
     label shin30_lastnight:
             
-        $ event_name = "Two People Watching the Stars, Wishing"
+        $ event_name = _("Two People Watching the Stars, Wishing")
         
         stop music fadeout 1.5
         pause 2
@@ -4095,7 +4095,7 @@ label shin30:
     ####################################################    
     label shin30_bakery:
             
-        $ event_name = "My Dream"
+        $ event_name = _("My Dream")
         
         show si 001 night at center with dis
         
@@ -4195,9 +4195,9 @@ label shin30:
         scene black with dis
         pause 3
         
-        $ event_name = "The Last Day"
+        $ event_name = _("The Last Day")
         $ day = 31
-        $ the_date = "August 31"
+        $ the_date = _("August 31")
         
         play music birds_chirping
         scene hbroom with sdis
@@ -4390,7 +4390,7 @@ label shin30:
     #############################################################
     label shin30_goodbye_normal:
             
-        $ event_name = "Don't Cry"
+        $ event_name = _("Don't Cry")
 
         scene bus with wipeleft
         play sound bus_idling loop
@@ -4411,7 +4411,7 @@ label shin30:
     #######################################################
     label shin30_goodbye_kiss:
             
-        $ event_name = "A Kiss Goodbye, and for a New Beginning"
+        $ event_name = _("A Kiss Goodbye, and for a New Beginning")
         
         si "「[fn], wait a moment. 」"
         fn "「? 」"
@@ -4483,7 +4483,7 @@ label shin30:
 #######################################################
 label juuichi30:
     
-    $ event_name = "Our First and Last Village Date"
+    $ event_name = _("Our First and Last Village Date")
     
     play music tam_n06
     scene rice_paddy with dis
@@ -4556,7 +4556,7 @@ label juuichi30:
     fn "「Alright then, {w=.2}let's go there. 」"
     "Like that, {w=.2}we settled on our date spot for today."
     
-    $ event_name = "What did We See at the Lake?!"
+    $ event_name = _("What did We See at the Lake?!")
 
     stop music fadeout 3
     scene black with sdis
@@ -4666,11 +4666,11 @@ label juuichi30:
             $ first = persistent.name_first
             $ last = persistent.name_last
             $ day = 30
-            $ event_name = "Mixed Heartbeats"
+            $ event_name = _("Mixed Heartbeats")
             
             scene lake with dis
             
-        $ event_name = "Mixed Heartbeats"
+        $ event_name = _("Mixed Heartbeats")
         
         "I also know it's extravagant to want more than this.{p}But I still want to feel more off him.{p}I want to touch him."
         "I relax my arms just a bit, {w=.2}and insert my right hand\nunder the hem of his shirt.{w} He jumps in surprise,{w=.2}\nand his body trembles for a moment."
@@ -4854,7 +4854,7 @@ label juuichi30:
         "Instead, I gently kiss him.{p}Taking his raised breathing into consideration,{w=.2}\nI make it a light one."
         "I start going soft, {w=.2}and pull myself out of Juuichi-\nsan.{w} Mm... {w=.2}the sound that comes out of his mouth is\nso seductive."
         
-        $ event_name = "Toward Each of Our Futures"
+        $ event_name = _("Toward Each of Our Futures")
 
         scene black with sdis
         
@@ -4946,7 +4946,7 @@ label juuichi30:
         "The troubled look on his face shows that he has given\nup.{w} I can't help but laugh."
         "Seeing me do that coaxes Juuichi-san into\nlaughing a bit as well."
         
-        $ event_name = "Falling Stars and True Feelings"
+        $ event_name = _("Falling Stars and True Feelings")
 
         stop music fadeout 3
         scene black with sdis
@@ -5008,7 +5008,7 @@ label juuichi30:
         
         "We continue to watch the night sky,{w=.2}\nuntil we don't see any more shooting stars."
         
-        $ event_name = "The Final Morning, A Morning of Good-Byes"
+        $ event_name = _("The Final Morning, A Morning of Good-Byes")
 
         stop music fadeout 5
         scene black with sdis
@@ -5017,10 +5017,10 @@ label juuichi30:
         play music birds_chirping  
         
         $ day = 31
-        $ the_date = "August 31"
+        $ the_date = _("August 31")
     
         scene sky01 
-        show text "{size=+130}August 31" at truecenter
+        show text _("{size=+130}August 31") at truecenter
         with Dissolve(.5)
         pause 3
         scene black with Dissolve(1)
@@ -5090,7 +5090,7 @@ label juuichi30:
         ju "「Alright, {w=.2}let's get going. 」"
         "I nod, {w=.2}put on my shoes, {w=.2}and step outside."
         
-        $ event_name = "The Faraway Hometown"
+        $ event_name = _("The Faraway Hometown")
 
         stop music fadeout 3
         scene black  with sdis
@@ -5127,7 +5127,7 @@ label juuichi30:
         ju "「If you get lonely, {w=.2}you can come back here anytime.{p}\ \ I'll always be here, {w=.2}thinking about you all the\n\ \ time. 」"
         "Juuichi-san gently smiles."
         
-        $ event_name = "Smiling as I say Good-Bye"
+        $ event_name = _("Smiling as I say Good-Bye")
 
         stop music fadeout 3
         scene black with sdis
@@ -5383,7 +5383,7 @@ label juuichi30:
     #################################################
     label juuichi30_goodbye_album:
             
-        $ event_name = "A Gift to Remember"
+        $ event_name = _("A Gift to Remember")
         
         scene bstop with wipe_right
         show ko 001 at center with wipe_right

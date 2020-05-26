@@ -6,15 +6,15 @@ label day28:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 28
-    $ the_date = "August 28"
-    $ event_name = "８月28日"
+    $ the_date = _("August 28")
+    $ event_name = _("８月28日")
     
     if favorite == "tatsuki" or favorite == "shun" or favorite == "kouya":
         window hide
         play music birds_chirping
             
         scene sky01 
-        show text "{size=+130}August 28" at truecenter
+        show text _("{size=+130}August 28") at truecenter
         with Dissolve(.5)
         
         pause 3
@@ -30,7 +30,7 @@ label day28:
 ########################################################
 label tatsuki28:
     
-    $ event_name = "I can't do it"
+    $ event_name = _("I can't do it")
 
     play music cicada01
     $ renpy.music.set_volume(0.4, 0.0, channel = "music")
@@ -78,7 +78,7 @@ label tatsuki28:
     ##############################################################    
     label tatsuki28_goodbye:
 
-        $ event_name = "Goodbye"
+        $ event_name = _("Goodbye")
             
         fn "「If it's you, you can do it. 」"
         "「There's just a little left, let's do our best. 」"
@@ -145,7 +145,7 @@ label tatsuki28:
         scene old_house1 with sdis
         pause 1.5
 
-        $ event_name = "Grandpa Shigure's Diary"
+        $ event_name = _("Grandpa Shigure's Diary")
 
         play sound rainstorm
         pause 1.5
@@ -273,7 +273,7 @@ label tatsuki28:
 ##########################################################        
     label tatsuki28_shutdown:
 
-        $ event_name = "A Button between Tatsuki's Eyebrows..."
+        $ event_name = _("A Button between Tatsuki's Eyebrows...")
         
         "What the...? There's a button in the middle\nof Tatsu-nii's forehead."
         "I never noticed until now."
@@ -434,7 +434,7 @@ label tatsuki28:
         to "「{cps=10}I'M YOUR,{w=.2} PRE-CIOUS FRIEND RIGHT? 」"
         "Fin."
         
-        $ event_name = "Grandpa Shigure's Diary"
+        $ event_name = _("Grandpa Shigure's Diary")
 
         scene android_torahiko with dis
         scene black with sdis
@@ -481,7 +481,7 @@ label tatsuki28:
     ####################################################
     label tatsuki28_dumbass:
             
-        $ event_name = "YOU DUMBASS!"
+        $ event_name = _("YOU DUMBASS!")
 
         stop music
         
@@ -703,7 +703,7 @@ label tatsuki28:
         scene tatsuki_bedroom with dis
         scene black with sdis  
   
-        $ event_name = "To Shigure's House"
+        $ event_name = _("To Shigure's House")
 
         scene old_house1 with sdis
         play music free02
@@ -806,7 +806,7 @@ label tatsuki28:
         stop music fadeout 1.5
         scene black with sdis
 
-        $ event_name = "The Midoriya Family"
+        $ event_name = _("The Midoriya Family")
 
         play music daily03
 
@@ -1108,7 +1108,7 @@ label tatsuki28:
 ########################################################
 label shun28:
     
-    $ event_name = "Falling Into Nothing"
+    $ event_name = _("Falling Into Nothing")
 
     stop music fadeout 1.5    
     scene black with wipe_dr  
@@ -1178,7 +1178,7 @@ label shun28:
     ####################################################
     label shun28_catch:
             
-        $ event_name = "Trying to Carry Him Under My Arm"
+        $ event_name = _("Trying to Carry Him Under My Arm")
         
         stop music fadeout 1
         pause 1
@@ -1209,7 +1209,7 @@ label shun28:
     ######################################################
     label shun28_cushion:
         
-        $ event_name = "Cushion Experience"
+        $ event_name = _("Cushion Experience")
         
         "Zuzaaa.{p}In the blink of an eye,\nI slide underneath Shun-kun."
         "As I expected, hanging his tail down when he loses\nhis balance doesn't break his fall.{w} That's okay,\nit seems he won't crash into the ground."
@@ -1301,7 +1301,7 @@ label shun28:
     #####################################################
     label shun28_tail:
         
-        $ event_name = "Overcome it with Tail Power"
+        $ event_name = _("Overcome it with Tail Power")
         
         "He wags his tail energetically when he's happy,\nand droops it down when he's sad."
         "If he uses it for his center of gravity,\nhe'll be able to regain his balance when he falls!"
@@ -1323,7 +1323,7 @@ label shun28:
     ##########################################################
     label shun28_recover:
         
-        $ event_name = "Nursing Under the Shade of a Tree"
+        $ event_name = _("Nursing Under the Shade of a Tree")
         
         play music free0258 fadein 1
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -1388,7 +1388,7 @@ label shun28:
 ########################################################
 label kouya28:
     
-    $ event_name = "Noisy Atmosphere"
+    $ event_name = _("Noisy Atmosphere")
 
     scene concert with wipe_right
     play music shop02
