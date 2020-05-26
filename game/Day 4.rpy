@@ -8,7 +8,7 @@ screen kounohouse04:
         add "icon_kouno"
         at kounobounce2
     hbox:
-        text "Kounosuke's House"
+        text _("Kounosuke's House")
         xalign .76 yalign .43
 screen juuichiriver04:
     hbox:
@@ -18,7 +18,7 @@ screen juuichiriver04:
         add "icon_juu"
         at riverbounce2
     hbox: 
-        text "River"
+        text _("River")
         xalign .625 yalign .7
 screen shinmarket04:
     hbox:
@@ -28,7 +28,7 @@ screen shinmarket04:
         add "icon_shin"
         at marketbounce21
     hbox:
-        text "Marketplace"
+        text _("Marketplace")
         xalign .515 yalign .54
         
 screen shuncandy04:
@@ -39,7 +39,7 @@ screen shuncandy04:
         add "icon_shun"
         at marketbounce22
     hbox:
-        text "Candy Store"
+        text _("Candy Store")
         xalign .47 yalign .53
 screen tatsukihouse04:
     hbox:
@@ -49,7 +49,7 @@ screen tatsukihouse04:
         add "icon_tatsu"
         at tatsukibounce2
     hbox: 
-        text "Tatsuki's House"
+        text _("Tatsuki's House")
         xalign .85 yalign .88
         
 screen date04:
@@ -61,7 +61,7 @@ screen minasatomap04_t():
     add "mapdate"
     imagebutton idle "a icon" hover "icon loop" xpos 662 ypos 391 action Jump("tatsuki04") hovered Show("tatsukihouse04")  unhovered Hide("tatsukihouse04") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 4"
+        text _("{size=+30}August 4")
         at maptime
         
 screen minasatomap04_r():
@@ -72,7 +72,7 @@ screen minasatomap04_r():
     imagebutton idle "a icon" hover "icon loop" xpos 382 ypos 259 action Jump("shin04") hovered Show("shinmarket04")  unhovered Hide("shinmarket04") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop" xpos 352 ypos 249 action Jump("shun04") hovered Show("shuncandy04")  unhovered Hide("shuncandy04") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 4"
+        text _("{size=+30}August 4")
         at maptime
   
 ###########################################        
@@ -83,8 +83,8 @@ label day04:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 4
-    $ the_date = "August 4"
-    $ event_name = "８月4日"
+    $ the_date = _("August 4")
+    $ event_name = _("８月4日")
     $ focus_character = ""
     
     window hide
@@ -149,7 +149,7 @@ label tatsuki04:
     
     $ focus_character = "tatsuki"
     $ love_tatsuki += 1
-    $ event_name = "Drunk Dragons"
+    $ event_name = _("Drunk Dragons")
     
     scene map
     stop music fadeout 1.5
@@ -269,7 +269,7 @@ label tatsuki04:
 ############################################            
 label tatsuki04_party:
     
-    $ event_name = "Just a little bit..."
+    $ event_name = _("Just a little bit...")
     
     show tp at jump_up
 
@@ -368,7 +368,7 @@ label tatsuki04_party:
 ####################################
 label tatsuki04_scold:
     
-    $ event_name = "With Guts!"
+    $ event_name = _("With Guts!")
     $ love_tatsuki -= 1
     
     stop music 
@@ -418,7 +418,7 @@ label tatsuki04_scold:
 #############################################
 label tatsuki04_help:
     
-    $ event_name = "Help"
+    $ event_name = _("Help")
     $ love_tatsuki += 1
 
     stop music fadeout .8
@@ -496,7 +496,7 @@ label tatsuki04_help:
 ########################################    
 label shin04:
     
-    $ event_name = "Shin-kun's Shopping" 
+    $ event_name = _("Shin-kun's Shopping")
     $ ficus_character = "shin"
     $ love_shin += 1
     
@@ -622,7 +622,7 @@ label shin04_familial:
 ############################################
 label shin04_after:
     
-    $ event_name = "Imposed Image"
+    $ event_name = _("Imposed Image")
     
     show si 004 with dis
     
@@ -655,7 +655,7 @@ label shin04_after:
 #############################################
 label shun04:
     
-    $ event_name = "Lemonade and Marbles"
+    $ event_name = _("Lemonade and Marbles")
     $ focus_character = "shun"
     $ love_shun += 1
     
@@ -759,7 +759,7 @@ label shun04:
     "To get marbles at a reasonable price,\nI would often buy ramune.{w} I should have learned\nhow to drink it at some point."
     "Perhaps living in the city, in conjunction\nwith my body that won't lose to the sun,\nhas robbed my memory of the original experience."
     
-    $ event_name = "Halfsies"
+    $ event_name = _("Halfsies")
 
     show su 001 with dis
 
@@ -839,7 +839,7 @@ label shun04:
 #########################################
 label shun04_biteshun:
     
-    $ event_name = "A Bite from Shun-kun"
+    $ event_name = _("A Bite from Shun-kun")
     $ love_shun += 1
     
     show so 001 with dis
@@ -893,7 +893,7 @@ label shun04_biteshun:
 ############################################
 label shun04_bitesou:
     
-    $ event_name = "A Bite from Soutarou-Kun"
+    $ event_name = _("A Bite from Soutarou-Kun")
     $ love_soutarou += 1
         
     play music free0551 fadein .3
@@ -959,7 +959,7 @@ label shun04_bitesou:
 label juuichi04:
     
     $ focus_character = "juuichi"
-    $ event_name = "Firefly's Light, Lamplight, and the Day of a Promise."
+    $ event_name = _("Firefly's Light, Lamplight, and the Day of a Promise.")
     $ love_juuichi += 1    
     
     scene map
@@ -1001,7 +1001,7 @@ label juuichi04:
     scene river night with Dissolve(1) 
     play sound river_flow loop
     
-    $ event_name = "Lost Child Alert!"
+    $ event_name = _("Lost Child Alert!")
 
     fn "「...This is bad. 」"
     "I scratch my cheek as I look around.{p}Getting directions from Grandpa was a good start,{w=.3}\nbut I've completely forgotten Minasato's layout."
@@ -1018,7 +1018,7 @@ label juuichi04:
     "I should be in the general area,{w=.3}\nso I'll look around a little longer.{p}I check out my surroundings."
     "I can definitely see green lights dancing around.{p}...But, I came all this way to catch fireflies,{w=.3}\nso I want to find a place with many more around."
 
-    $ event_name = "Feels like I'm cursed"
+    $ event_name = _("Feels like I'm cursed")
     
     $ renpy.music.set_volume(0.7, 5.0, channel = "sound")
 
@@ -1091,7 +1091,7 @@ label juuichi04:
     fn "「I'm so sorry! 」"
     "I threw myself prostrate on the ground,\nand apologized to Juuichi-san."
 
-    $ event_name = "Bear's Shadow in a Cup"
+    $ event_name = _("Bear's Shadow in a Cup")
     
     scene black with Dissolve(1)
     pause .5
@@ -1123,7 +1123,7 @@ label juuichi04:
     
     hide ju with wipe_right
     
-    $ event_name = "A mysterious story"
+    $ event_name = _("A mysterious story")
     
     show ju 001 night at midright
     show na 001 night at midleft
@@ -1211,7 +1211,7 @@ label juuichi04:
 ##########################################
 label juuichi04_rideback:
 
-    $ event_name = "I Would Like a Ride Back, Please!"
+    $ event_name = _("I Would Like a Ride Back, Please!")
 
     ju "「...If you sit on the grass like that for too long,\n\ \ your pants are going to be soaked with dew. 」"
     "Saying that,{w=.3} he offers me his hand.{p}I grab it, and he pulls me upright."
@@ -1247,7 +1247,7 @@ label juuichi04_rideback:
     "His short brown fur isn't\nas bristly as I thought it would be.{p}With each step he takes, it tickles my arms a bit."
     "I can see the world from 2 metres up.{p}This must be the way Juuichi-san sees the world.{p}The scenery seems to feel fresh, for some reason."
 
-    $ event_name = "Summer Piggyback!"
+    $ event_name = _("Summer Piggyback!")
 
     stop sound fadeout 3
     
@@ -1406,7 +1406,7 @@ label kounosuke04:
     
     $ love_kounosuke += 1
     $ focus_character = "kounosuke"
-    $ event_name = "Reunion with Yukiharu"
+    $ event_name = _("Reunion with Yukiharu")
     
     scene map      
     hide screen kounohouse04

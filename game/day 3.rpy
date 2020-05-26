@@ -8,7 +8,7 @@ screen park03:
         add "icon_shun"
         at parkbounce2
     hbox:
-        text "Park"
+        text _("Park")
         xalign .49 yalign .55
 screen arcade03:
     hbox:
@@ -18,7 +18,7 @@ screen arcade03:
         add "icon_shin"
         at marketbounce2
     hbox:
-        text "Candy Store"
+        text _("Candy Store")
         xalign .5 yalign .51
         
 screen minasatomap03():
@@ -27,7 +27,7 @@ screen minasatomap03():
     imagebutton idle "a icon" hover "icon loop" xpos 364 ypos 270  action Jump("shun03") hovered Show("park03") unhovered Hide("park03") hover_sound "av/audio/click_008.wav" 
     imagebutton idle "a icon" hover "icon loop" xpos 372 ypos 249  action Jump("candy03") hovered Show("arcade03")  unhovered Hide("arcade03") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 3"
+        text _("{size=+30}August 3")
         at maptime
     
 ###########################################
@@ -37,9 +37,9 @@ label day03:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound")
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
-    $ the_date = "August 3"
+    $ the_date = _("August 3")
     $ focus_character = ""
-    $ event_name = "８月3日"
+    $ event_name = _("８月3日")
     
     window hide
     play music birds_chirping
@@ -61,7 +61,7 @@ label day03:
 ###########################################    
 label candy03:
 
-    $ event_name = "An Incompatible Person"
+    $ event_name = _("An Incompatible Person")
     $ focus_character = "shin"    
     
     scene map
@@ -170,7 +170,7 @@ label candy03:
 ######################################
 label candy03_tatsuki:
 
-    $ event_name = "Do you come here a lot, Tatsu-nii?"
+    $ event_name = _("Do you come here a lot, Tatsu-nii?")
     $ love_tatsuki += 1
 
     play music daily04
@@ -280,7 +280,7 @@ label candy03_tatsuki:
 #####################################
 label candy03_shin:
     
-    $ event_name = "What's Shin-kun's favorite?"
+    $ event_name = _("What's Shin-kun's favorite?")
     $ love_shin += 1
     
     play music daily04
@@ -438,7 +438,7 @@ label candy03_shin:
 #########################################    
 label shun03:
     
-    $ event_name = "His Strongest Weapon, Once Again"
+    $ event_name = _("His Strongest Weapon, Once Again")
     $ focus_character = "shun"
     $ love_shun += 1
     
@@ -569,7 +569,7 @@ label shun03:
     su "「Yaay! Let's go! 」"
     "Shun-kun leads me while skipping and jumping.\nI follow behind him.{p}Even though sweat runs down me, I feel refreshed."
     
-    $ event_name = "Let's go play"
+    $ event_name = _("Let's go play")
     
     stop music fadeout 1
     scene black with Dissolve(1)
@@ -653,7 +653,7 @@ label shun03:
     stop music fadeout 1.5
     scene black with Dissolve(1)
     
-    $ event_name = "Although I was Spacing Out"
+    $ event_name = _("Although I was Spacing Out")
     
     "We walk around Minasato Village.{p}As one would expect, I'm a little tired."
     "I suggest to Shun-kun, who's still energetic,{p}that we take a break in the park."
@@ -734,7 +734,7 @@ label shun03:
     show su 010 red
     with Dissolve(.5)
     
-    $ event_name = "Hugging Tightly"
+    $ event_name = _("Hugging Tightly")
     
     "I gave up all the adventures I could have\nduring summer vacation in the city,\n{w=.3}and decided to spend August here."
     "That doesn't mean I don't have regrets though."

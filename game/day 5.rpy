@@ -8,7 +8,7 @@ screen tatsukimarket05:
         add "icon_tatsu"
         at marketbounce21
     hbox:
-        text "Marketplace"
+        text _("Marketplace")
         xalign .515 yalign .54
         
 screen kouyacandy05:
@@ -19,7 +19,7 @@ screen kouyacandy05:
         add "icon_kouya"
         at marketbounce22
     hbox:
-        text "Candy Store"
+        text _("Candy Store")
         xalign .47 yalign .53
         
 screen juuichiriver05:
@@ -30,7 +30,7 @@ screen juuichiriver05:
         add "icon_juu"
         at riverbounce2
     hbox: 
-        text "River"
+        text _("River")
         xalign .625 yalign .7
         
 screen minasatomap05a():
@@ -40,7 +40,7 @@ screen minasatomap05a():
     imagebutton idle "a icon" hover "icon loop" xpos 382 ypos 259 action Jump("tatsuki05") hovered Show("tatsukimarket05")  unhovered Hide("tatsukimarket05") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop" xpos 352 ypos 249 action Jump("kouya05") hovered Show("kouyacandy05")  unhovered Hide("kouyacandy05") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 5"
+        text _("{size=+30}August 5")
         at maptime
     
 screen minasatomap05b():
@@ -49,7 +49,7 @@ screen minasatomap05b():
     imagebutton idle "a icon" hover "icon loop" xpos 382 ypos 259 action Jump("tatsuki05") hovered Show("tatsukimarket05")  unhovered Hide("tatsukimarket05") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop" xpos 352 ypos 249 action Jump("kouya05") hovered Show("kouyacandy05")  unhovered Hide("kouyacandy05") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 5"
+        text _("{size=+30}August 5")
         at maptime
         
 label day05:
@@ -59,8 +59,8 @@ label day05:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 5
-    $ the_date = "August 5"
-    $ event_name = "８月5日"
+    $ the_date = _("August 5")
+    $ event_name = _("８月5日")
     $ focus_character = ""
     
     window hide
@@ -92,7 +92,7 @@ label kouya05:
     hide screen kouyacandy05
     stop music
     
-    $ event_name = "Candy Wars"
+    $ event_name = _("Candy Wars")
     $ love_kouya += 1
     
     scene black with wipe_dr_slow
@@ -264,7 +264,7 @@ label kouya05:
 ######################################
 label kouya05_salad:
     
-    $ event_name = "Unity is Strong"
+    $ event_name = _("Unity is Strong")
     $ love_kounosuke += 1
 
     fn "「I feel like having salad today. 」"
@@ -340,7 +340,7 @@ label kouya05_salad:
 #############################################
 label kouya05_cheese:
     
-    $ event_name = "An Italian Feeling"
+    $ event_name = _("An Italian Feeling")
     $ love_kyouji += 1
 
     fn "「Hmm... I guess I'll go with cheese. 」"
@@ -385,7 +385,7 @@ label kouya05_cheese:
 ###########################################
 label kouya05_takoyaki:
     
-    $ event_name = "Just Eat"
+    $ event_name = _("Just Eat")
     $ love_kouya += 1
 
     fn "「It's gonna be takoyaki, then. 」"
@@ -626,7 +626,7 @@ label kouya05_takoyaki:
     
     ky "「All right, go! 」"
     
-    $ event_name = "Things That Haven't Changed Between Then and Now"
+    $ event_name = _("Things That Haven't Changed Between Then and Now")
     stop music fadeout 1
     
     scene candystoreout
@@ -956,7 +956,7 @@ label juuichi05:
     hide screen juuichiriver05
     stop music
     
-    $ event_name = "Pure, Ephemeral, Beautiful"
+    $ event_name = _("Pure, Ephemeral, Beautiful")
     $ focus_character = "juuichi"
     $ love_juuichi += 1
     $ juuichi_fireflies02 = True
@@ -1099,7 +1099,7 @@ label juuichi05:
     "Well,{w=.3} they say you get tired of\nseeing a beautiful person after 3 days."
     "I guess, if you kept looking at a beautiful scene,{w=.3}\nyou'd appreciate it less."
 
-    $ event_name = "Learning to Walk, Juuichi-Style"
+    $ event_name = _("Learning to Walk, Juuichi-Style")
 
     show ju 001 night with dis
 
@@ -1125,7 +1125,7 @@ label juuichi05:
     show ju 001 night at center
     with dis
 
-    $ event_name = "Fireflies on an overcast night"
+    $ event_name = _("Fireflies on an overcast night")
 
     ju "「...We're almost there. 」"
     fn "「Huh? 」"
@@ -1168,7 +1168,7 @@ label juuichi05:
     "Thank goodness Juuichi-san's making a path in front.{p}If I came here alone,\nit would be quite the struggle."
     "Juuichi-san's back looks bigger than usual\nas he pushes through the reeds in silence.{p}Surely it can't be an optical illusion."
 
-    $ event_name = "Green Lights Under the Night Sky"
+    $ event_name = _("Green Lights Under the Night Sky")
 
     "We continue through the weeds for about 20 meters.{p}As we get close to the river,{w=.3}\nthe number of green lights in the air increases."
     "As the number of them increases,{w=.3}\nI give up trying to count them.{p}There are more here than I imagined."

@@ -8,7 +8,7 @@ screen shinhouse02:
         add "icon_shin"
         at shinbounce2
     hbox:
-        text "Shin's House"
+        text _("Shin's House")
         xalign .16 yalign .70
 screen marketplace02:
     hbox:
@@ -18,7 +18,7 @@ screen marketplace02:
         add "icon_kouno"
         at marketbounce2
     hbox:
-        text "Marketplace"
+        text _("Marketplace")
         xalign .5 yalign .52
 screen ricefield02:
     hbox:
@@ -28,7 +28,7 @@ screen ricefield02:
         add "icon_juu"
         at ricebounce2
     hbox:
-        text "Rice Fields"
+        text _("Rice Fields")
         xalign .245 yalign .66
         
 screen riverbed02:
@@ -41,7 +41,7 @@ screen riverbed02:
         spacing 5
         at riverbounce2
     hbox: 
-        text "River"
+        text _("River")
         xalign .625 yalign .7
 screen tatsukihouse02:
     hbox:
@@ -51,7 +51,7 @@ screen tatsukihouse02:
         add "icon_tatsu"
         at tatsukibounce2
     hbox: 
-        text "Tatsuki's House"
+        text _("Tatsuki's House")
         xalign .85 yalign .88
         
         
@@ -64,7 +64,7 @@ screen minasatomap02():
     imagebutton idle "a icon" hover "icon loop"  xpos 458 ypos 351  action Jump("river02") hovered Show("riverbed02")  unhovered Hide("riverbed02") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki02") hovered Show("tatsukihouse02")  unhovered Hide("tatsukihouse02") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 2"
+        text _("{size=+30}August 2")
         at maptime
 
 #####################################################        
@@ -75,8 +75,8 @@ label day02:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
 
     $ day = 2
-    $ the_date = "August 2"
-    $ event_name  = "８月２日"
+    $ the_date = _("August 2")
+    $ event_name  = _("８月２日")
     $ focus_character = ""
     
     window hide
@@ -101,7 +101,7 @@ label day02:
 label shin02:
     
     $ focus_character = "shin"
-    $ event_name = "Old Memories and a Capricious Cat"
+    $ event_name = _("Old Memories and a Capricious Cat")
     
     scene map
     stop music
@@ -395,7 +395,7 @@ label shin02_amaki_recipe:
     si "「...you certainly do remember a lot. 」"
     "Looking back, that incident really was the\nbeginning of our relationship with Shin-kun."
     
-    $ event_name = "Exploring the Mansion"
+    $ event_name = _("Exploring the Mansion")
     
     stop music fadeout 2
     scene black with Dissolve(1)
@@ -514,7 +514,7 @@ label shin02_amaki_recipe:
     "There are parts we can't really understand,\nbut he wasn't a bad guy.{p}We all understood that."
     "And so, we all became friends."
     
-    $ event_name = "Time passes by quickly"
+    $ event_name = _("Time passes by quickly")
     
     scene shin_house_den red
     show si 003 red at center
@@ -586,7 +586,7 @@ label shin02_amaki_recipe:
 ##############################################
 label kounosuke02:
     
-    $ event_name = "At the bookstore"
+    $ event_name = _("At the bookstore")
     $ focus_character = "kounosuke"
     scene map
     hide screen marketplace02
@@ -725,7 +725,7 @@ label kounosuke02:
 #############################################    
 label river02:
     
-    $ event_name = "Let's Cool Off at the Riverbed"
+    $ event_name = _("Let's Cool Off at the Riverbed")
     $ focus_character = "kouya"
     
     scene map
@@ -945,7 +945,7 @@ label river02:
     #########################################        
     label river02_can_remember:
         
-        $ event_name = "Oh, I remember!"
+        $ event_name = _("Oh, I remember!")
         $ love_shun += 1
         $ love_kouya += 1
         
@@ -1011,7 +1011,7 @@ label river02:
     #########################################    
     label river02_cannot_remember:
         
-        $ event_name = "Hmm, I can't remember"
+        $ event_name = _("Hmm, I can't remember")
         $ love_shun -= 1
         $ love_kouya -= 1
         
@@ -1085,7 +1085,7 @@ label river02:
     #########################################    
     label river02_story_time:
         
-        $ event_name = "Calling, Somewhere from Within"
+        $ event_name = _("Calling, Somewhere from Within")
         
         fn "「Oh, is it time for a rescue story?{p}\ \ Like, you know, the one with the river god. 」"
         
@@ -1179,7 +1179,7 @@ label river02:
     #########################################    
     label river02_memory:
         
-        $ event_name = "A Story from Long Ago"
+        $ event_name = _("A Story from Long Ago")
         
         stop music fadeout 1
         scene black with Dissolve(1)
@@ -1368,7 +1368,7 @@ label river02:
 ##############################################
 label tatsuki02:
     
-    $ event_name = "Playing with Tatsu-nii"
+    $ event_name = _("Playing with Tatsu-nii")
     $ focus_character = "tatsuki"
     
     scene map
@@ -1640,7 +1640,7 @@ label tatsuki02:
     ###################################################
     label tatsuki02_hangout:
         
-        $ event_name = "Let's go play"
+        $ event_name = _("Let's go play")
         $ love_tatsuki += 1
         
         fn "「Hmm, it's tempting...{p}\ \ but for a while now,\n\ \ I've wanted to spend time with Tatsu-nii. 」"
@@ -1753,7 +1753,7 @@ label tatsuki02:
     ##########################################    
     label tatsuki02_coworkers:
         
-        $ event_name = "The One who cares"
+        $ event_name = _("The One who cares")
         
         hide ta with wipeleft
         stop music fadeout 1
@@ -1994,7 +1994,7 @@ label tatsuki02:
 #######################################    
 label juuichi02:
     
-    $ event_name = "Meeting on the Second Day"
+    $ event_name = _("Meeting on the Second Day")
     $ focus_character = "juuichi"
     
     scene map
@@ -2060,7 +2060,7 @@ label juuichi02:
     
     "Just as I guessed, it's Juuichi-san."
     
-    $ event_name = "Suddenly, a Bear!"
+    $ event_name = _("Suddenly, a Bear!")
     
     show ju 011 with dis
     
