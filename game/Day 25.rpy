@@ -6,15 +6,15 @@ label day25:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 25
-    $ the_date = "August 25"
-    $ event_name = "８月25日"
+    $ the_date = _("August 25")
+    $ event_name = _("８月25日")
     
     if favorite == "tatsuki" or favorite == "kouya":
         window hide
         play music birds_chirping
             
         scene sky01 
-        show text "{size=+130}August 25" at truecenter
+        show text _("{size=+130}August 25") at truecenter
         with Dissolve(.5)
         
         pause 3
@@ -29,7 +29,7 @@ label day25:
 #################################################
 label tatsuki25:
 
-    $ event_name = "The Result of Sorrow"
+    $ event_name = _("The Result of Sorrow")
 
     scene old_house2 with sdis
     play music cicada01    
@@ -283,7 +283,7 @@ label tatsuki25:
 #####################################################    
 label kouya25:
     
-    $ event_name = "First Day at a New Job"
+    $ event_name = _("First Day at a New Job")
     
     scene hentry with dis
     
@@ -321,7 +321,7 @@ label kouya25:
     scene kouya_apartment with wipe_right
     play music daily05
     
-    $ event_name = "Together With Kouya"
+    $ event_name = _("Together With Kouya")
     
     "When I arrived, Kouya was already outside\nhis run down-looking apartment."
 
@@ -430,7 +430,7 @@ label kouya25:
     stop music fadeout 3
     scene black with wipe_right
 
-    $ event_name = "At the Studio"
+    $ event_name = _("At the Studio")
     
     play music shop02
     scene music_shop with wipe_right
@@ -470,7 +470,7 @@ label kouya25:
     #######################################################
     label kouya25_band_reunion:
         
-        $ event_name = "Reunion of the Three Guys"  
+        $ event_name = _("Reunion of the Three Guys")
         
         "Surprised, Keisuke-san looked up.{p}The voice we'd heard had come from a canary birdman.{p}Next to him stood a quiet tortoiseshell cat."
         
@@ -540,7 +540,7 @@ label kouya25:
     ##################################################
     label kouya25_band_meet:
             
-        $ event_name = "First Time with the Three Guys"
+        $ event_name = _("First Time with the Three Guys")
         
         "I fixed up my hair, and raised my head.{p}Over where I heard the other voice come from,{w=.2}\nI saw a birdman."
         "He was completely green from head to toe,\nand about as tall as I am."
@@ -611,7 +611,7 @@ label kouya25:
     ###################################################
     label kouya25_musikus:
             
-        $ event_name = "Welcome to Musikus"
+        $ event_name = _("Welcome to Musikus")
         
         ke "「And now,{w=.2} we'll need\n\ \ to introduce you to the band, [fn]...{p}\ \ Kouya, I leave that to you. 」"
         
@@ -643,7 +643,7 @@ label kouya25:
         
         ke "「Welcome...{w=.2} to Musikus! 」"
         
-        $ event_name = "The Uncharted World"
+        $ event_name = _("The Uncharted World")
         
         scene black with sdis
         stop music fadeout 3
@@ -783,7 +783,7 @@ label kouya25:
         scene black with sdis
         pause 2
         
-        $ event_name = "Timing"
+        $ event_name = _("Timing")
         
         "Practice ran on well into the night,\nbut eventually it was time to stop."
         "During all that time,\nI'd occasionally get drinks\nand listen to them play."

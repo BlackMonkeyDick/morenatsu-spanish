@@ -2,8 +2,8 @@
 label day21:
     
     $ day = 21
-    $ the_date = "August 21"
-    $ event_name = "８月21日"
+    $ the_date = _("August 21")
+    $ event_name = _("８月21日")
     
     if favorite == "kouya":
         window hide
@@ -29,7 +29,7 @@ label kouya21:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound")
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
-    $ event_name = "Waking Up Somewhere Else"
+    $ event_name = _("Waking Up Somewhere Else")
 
     stop music fadeout 1.5
     play music se_037 fadein 1
@@ -143,7 +143,7 @@ label kouya21:
     
     scene black with sdis
     
-    $ event_name = "House-sitting Freeloader"
+    $ event_name = _("House-sitting Freeloader")
 
     play music free0213
     scene bedroom
@@ -301,7 +301,7 @@ label kouya21:
     ##########################################################    
     label kouya21_letter:
         
-        $ event_name = "Dining Table and a Letter"
+        $ event_name = _("Dining Table and a Letter")
         
         play music daily03
         scene bedroom red
@@ -480,7 +480,7 @@ label kouya21:
     #############################################
     label kouya21_stay:
     
-        $ event_name = "Cowardly Housewatch"
+        $ event_name = _("Cowardly Housewatch")
         
         "Is it okay to let Kouya go?"
         "No,{w=.2} there's no way it should be."
@@ -501,7 +501,7 @@ label kouya21:
     #############################################    
     label kouya21_chase:
     
-        $ evemt_name = "Timid Support"
+        $ evemt_name = _("Timid Support")
         
         "Is it okay to let Kouya go?"
         "No,{w=.2} there's no way it should be."
@@ -518,7 +518,7 @@ label kouya21:
         stop music fadeout 2
         scene black with wipe_right
 
-        $ event_name = "His Whereabouts"
+        $ event_name = _("His Whereabouts")
 
         play music piano4_001
 
@@ -564,7 +564,7 @@ label kouya21:
     ####################################################
     label kouya21_river:
         
-        $ event_name = "His Place"
+        $ event_name = _("His Place")
 
         scene white with sdis
         
@@ -606,7 +606,7 @@ label kouya21:
     ##############################################
     label kouya21_lake:
         
-        $ event_name = "His Direction"
+        $ event_name = _("His Direction")
         
         fn "「Maybe at the lake...? 」"
         "Without any reason, I thought that."
@@ -663,7 +663,7 @@ label kouya21:
     #################################################
     label kouya21_forest:
         
-        $ event_name = "His Form"
+        $ event_name = _("His Form")
         
         fn "「Maybe the forest...? 」"
         "For no particular reason, I thought that."
@@ -708,7 +708,7 @@ label kouya21:
     ################################################
     label kouya21_reason:
         
-        $ event_name = "His Reason"
+        $ event_name = _("His Reason")
 
         scene river night with wipe_right
         show ka 001 night at center with sdis
@@ -877,7 +877,7 @@ label kouya21:
     ##################################################
     label kouya21_go:
             
-        $ event_name = "Positive Answer"
+        $ event_name = _("Positive Answer")
         
         fn "「If it were me, I'd go. 」"
         "After thinking about it, that would be my answer."
@@ -910,7 +910,7 @@ label kouya21:
     #####################################################
     label kouya21_avoid:
         
-        $ event_name = "Negative Answer"
+        $ event_name = _("Negative Answer")
         
         fn "「If it were me, I don't think I'd go. 」"
         "After worrying about it, that would be my answer."
@@ -929,7 +929,7 @@ label kouya21:
     #####################################################
     label kouya21_unsure:
         
-        $ event_name = "Your Answer"
+        $ event_name = _("Your Answer")
         
         fn "「...That's not something you should be asking me. 」"
         "I tossed out all the responses,\nthen said that to Kouya."
@@ -987,7 +987,7 @@ label kouya21:
     ##############################################
     label kouya21_badend:
             
-        $ event_name = "One Ending"
+        $ event_name = _("One Ending")
         
         stop music fadeout 1.5
         scene black with sdis
@@ -1020,7 +1020,7 @@ label kouya21:
     ############################################
     label kouya21_gohome:
         
-        $ event_name = "His Hand"
+        $ event_name = _("His Hand")
         
         "That figure somehow looked bigger than usual."
         

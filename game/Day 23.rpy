@@ -6,15 +6,15 @@ label day23:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 23
-    $ the_date = "August 23"
-    $ event_name = "８月23日"
+    $ the_date = _("August 23")
+    $ event_name = _("８月23日")
     
     if favorite == "tatsuki" or favorite == "kouya":
         window hide
         play music birds_chirping
             
         scene sky01 
-        show text "{size=+130}August 23" at truecenter
+        show text _("{size=+130}August 23") at truecenter
         with Dissolve(.5)
         
         pause 3
@@ -30,7 +30,7 @@ label day23:
 ###################################################
 label tatsuki23:
     
-    $ event_name = "After the Festival"
+    $ event_name = _("After the Festival")
 
     scene tatsuki_bedroom with sdis
     
@@ -93,7 +93,7 @@ label tatsuki23:
     "I'm embarrassed too, but just where did\nall that awkwardness come from?"
     "Is today going to be all right...?"
 
-    $ event_name = "Take Off!"
+    $ event_name = _("Take Off!")
     
     scene prairie with wipe_down_slow 
     
@@ -385,7 +385,7 @@ label tatsuki23:
 ###################################################
 label kouya23:
     
-    $ event_name = "4th Day's Aspiration Survey Book"
+    $ event_name = _("4th Day's Aspiration Survey Book")
     
     play music free0258
     scene bedroom with dis
@@ -478,7 +478,7 @@ label kouya23:
     scene black with wipe_right
     pause 1.5    
 
-    $ event_name = "Going up"
+    $ event_name = _("Going up")
    
     play music shop03
     scene kazenari01 with wipe_right
@@ -500,7 +500,7 @@ label kouya23:
 ########################################################
 label kouya23_leader_known:
       
-    $ event_name = "That Guy and the Impromptu Interview"
+    $ event_name = _("That Guy and the Impromptu Interview")
     
     show ka 001 at center with dis
     
@@ -621,7 +621,7 @@ label kouya23_leader_known:
 ###################################################
 label kouya23_leader_unknown:
     
-    $ event_name = "Whoever That Guy Is and the Impromptu Interview"
+    $ event_name = _("Whoever That Guy Is and the Impromptu Interview")
     
     show ka 005 at center with dis
     
@@ -756,7 +756,7 @@ label kouya23_leader_unknown:
 ############################################
 label kouya23_accepted:
     
-    $ event_name = "Speech of Warning"
+    $ event_name = _("Speech of Warning")
     
     "He extended his hand from across the table.{p}I was a bit overwhelmed by Keisuke-san\nas I took his hand."
     fn "「Y-{w}yeah, looking forward to it. 」"

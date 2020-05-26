@@ -6,14 +6,14 @@ label day22:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 22
-    $ the_date = "August 22"
-    $ event_name = "８月22日"
+    $ the_date = _("August 22")
+    $ event_name = _("８月22日")
     
     window hide
     play music birds_chirping
         
     scene sky01 
-    show text "{size=+130}August 22" at truecenter
+    show text _("{size=+130}August 22") at truecenter
     with Dissolve(.5)
     
     pause 3
@@ -25,7 +25,7 @@ label day22:
     
 ######################################################        
 label kounosuke22:
-    $ event_name = "Kounosuke, Summer Festival"
+    $ event_name = _("Kounosuke, Summer Festival")
 
     play music festa01 fadein 1
     scene festival_stands with sdis
@@ -459,7 +459,7 @@ label kounosuke22:
 ######################################################
 label tatsuki22:
 
-    $ event_name = "Festival"
+    $ event_name = _("Festival")
     scene black with sdis
     play music cicada01 fadein 2
     $ renpy.music.set_volume(0.3, 0.0, channel = "music")
@@ -570,7 +570,7 @@ label tatsuki22:
     stop music fadeout 2
     scene black with sdis 
       
-    $ event_name = "The start of a busy day"
+    $ event_name = _("The start of a busy day")
 
     scene tatsukihouse inside with sdis   
     play music free02
@@ -670,7 +670,7 @@ label tatsuki22:
     fn "「Yes, please. 」"
     "Anyway, I'll go wash my face, brush my teeth,\nthen go eat."
 
-    $ event_name = "At the Shrine"
+    $ event_name = _("At the Shrine")
     
     play music cicada01 fadein .5
     scene black with sdis
@@ -867,7 +867,7 @@ label tatsuki22:
     ###########################################
     label tatsuki22_school:
 
-        $ event_name = "Won't you join in?"
+        $ event_name = _("Won't you join in?")
         
         #stop music fadeout 1
         scene school01 with sdis
@@ -1057,7 +1057,7 @@ label tatsuki22:
     #######################################################
     label tatsuki22_prank:
 
-        $ event_name = "Mischief"
+        $ event_name = _("Mischief")
         
         play music oo39_cho_ys001
         scene toilet_out1 with wipe_right
@@ -1126,7 +1126,7 @@ label tatsuki22:
     #######################################################
     label tatsuki22_help:
         
-        $ event_name = "Miracle of God"
+        $ event_name = _("Miracle of God")
 
         scene toilet_out1 with wipe_right
             
@@ -1303,7 +1303,7 @@ label tatsuki22:
     #####################################################
     label tatsuki22_god:
         
-        $ event_name = "The Importance of Paper?"
+        $ event_name = _("The Importance of Paper?")
         
         "I took the toilet paper,\nand violently pulled it off the roll."
         bo "「Is someone in the next stall over?{p}\ \ Excuse me, but can you give me some toilet paper? 」"
@@ -1445,7 +1445,7 @@ label tatsuki22:
         stop music fadeout 5
         scene black with sdis
 
-        $ event_name = "Tatsuki Bad Ending 001"
+        $ event_name = _("Tatsuki Bad Ending 001")
 
         play sound rainstorm
         pause 1.5
@@ -1702,7 +1702,7 @@ label tatsuki22:
         ta "「God damn it! Adults!! 」"
         "I was dragged along with Tatsu-nii,\nas we broke out into a run."
     
-        $ event_name = "Dash!"
+        $ event_name = _("Dash!")
         
         scene shrine with wipe_right
         pause .2
@@ -2178,7 +2178,7 @@ label tatsuki22:
     #######################################################
     label tatsuki22_ringtoss:
         
-        $ event_name = "At the Night Stands"
+        $ event_name = _("At the Night Stands")
         
         "Now, where should I aim?"
         
@@ -2197,7 +2197,7 @@ label tatsuki22:
     #######################################################
     label tatsuki22_first:
 
-        $ event_name = "Aiming for Victory"
+        $ event_name = _("Aiming for Victory")
         
         show ta 502 with dis
         
@@ -2370,7 +2370,7 @@ label tatsuki22:
     ##########################################################
     label tatsuki22_easy:
 
-        $ event_name = "Being Methodical"
+        $ event_name = _("Being Methodical")
         
         "If I know Tatsu-nii, he'll be aiming for first.{p}Chuukichi-kun doesn't seem that cautious either,\nso there's a good chance neither will win at all."
         "So if I go for a shot I can make,\nI should be able to win!{p}I shouldn't be the one at the bottom!"
@@ -2570,7 +2570,7 @@ label tatsuki22:
     #############################################################
     label tatsuki22_triple:
         
-        $ event_name = "What I Desire"
+        $ event_name = _("What I Desire")
         
         "Well, throwing these normally would be boring."
         fn "「Right then, I'm doing it this way. 」"
@@ -2635,7 +2635,7 @@ label tatsuki22:
     #######################################################
     label tatsuki22_power:
         
-        $ event_name = "Max Power Boy!"
+        $ event_name = _("Max Power Boy!")
         
         play music oo39_cho_ys001 fadein 5
         
@@ -2743,7 +2743,7 @@ label tatsuki22:
     #######################################################
     label tatsuki22_masochist:
         
-        $ event_name = "PUNCH!!!"
+        $ event_name = _("PUNCH!!!")
             
         fn "{size=+15}「YOU IDIOT!!! 」" 
         "I struck Chuukichi-kun for no reason."
@@ -2787,7 +2787,7 @@ label tatsuki22:
     ####################################################
     label tatsuki22_drums:
         
-        $ event_name = "Beat of the Drum"
+        $ event_name = _("Beat of the Drum")
 
         play music festival_ambience fadein 2
         scene black with sdis
@@ -3013,7 +3013,7 @@ label tatsuki22:
             $ last = persistent.name_last
             $ day = 22
         
-        $ event_name = "I Love Ya!"
+        $ event_name = _("I Love Ya!")
 
         stop music fadeout 1
         scene black with sdis
@@ -3327,7 +3327,7 @@ label shun22:
     ##############################################
     label shun22_proceed:
         
-        $ event_name = "Rendezvous"
+        $ event_name = _("Rendezvous")
         
         scene shrine_stairs red with sdis
         
@@ -3393,7 +3393,7 @@ label shun22:
         
         scene black with sdis
 
-        $ event_name = "To Some Other Place"
+        $ event_name = _("To Some Other Place")
 
         scene shrine_stairs red with sdis
         
@@ -3465,7 +3465,7 @@ label shun22:
         pause 1
         scene black with wipeleft  
   
-        $ event_name = "In the Opposite Direction"
+        $ event_name = _("In the Opposite Direction")
 
         play sound night_insects loop fadein 1
         scene path red with wipeleft
@@ -3555,7 +3555,7 @@ label shun22:
         
         stop sound fadeout 1
         
-        $ event_name = "The Kodori family's ceremony"
+        $ event_name = _("The Kodori family's ceremony")
         
         play music melodious01
         $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -3626,7 +3626,7 @@ label shun22:
         stop music fadeout 2
         pause 2
         
-        $ event_name = "A Pair Watching Fireworks"
+        $ event_name = _("A Pair Watching Fireworks")
         
         play sound fireworks_explosion
         show fireworks 
@@ -3682,7 +3682,7 @@ label shun22:
     ######################################################################
     label shun22_badend:
         
-        $ event_name = "3 Tails"
+        $ event_name = _("3 Tails")
         
         scene shrine_court red with sdis
         play music festival_ambience fadein 1
@@ -3826,7 +3826,7 @@ label shun22:
 ######################################################
 label kouya22:
     
-    $ event_name = "Crossing of Fate--Front to Back"
+    $ event_name = _("Crossing of Fate--Front to Back")
 
     play music melodious08
     scene bedroom with dis
@@ -3869,7 +3869,7 @@ label kouya22:
     stop music fadeout 3
     scene black with sdis 
    
-    $ event_name = "Crossing of Fate--Left to Right"
+    $ event_name = _("Crossing of Fate--Left to Right")
 
     play music cicada01 fadein 3
     scene kouya_house_out with sdis
@@ -3904,7 +3904,7 @@ label kouya22:
     stop music fadeout 3
     scene black with sdis
     
-    $ event_name = "Talks of Various Things"
+    $ event_name = _("Talks of Various Things")
 
     scene kouya_house_in with sdis    
     play music piano4_001
@@ -3998,7 +3998,7 @@ label kouya22:
     stop music fadeout 3
     scene black with sdis 
   
-    $ event_name = "Words of Determination"
+    $ event_name = _("Words of Determination")
 
     scene bedroom with sdis
     play music free10
@@ -4032,7 +4032,7 @@ label kouya22:
     stop music fadeout 3
     scene black with sdis
     
-    $ event_name = "His Story"
+    $ event_name = _("His Story")
 
     scene bedroom with sdis
     play music melodious05
@@ -4142,7 +4142,7 @@ label kouya22:
     stop music fadeout 3
     scene black with dis   
  
-    $ event_name = "Kouya and the Festival"
+    $ event_name = _("Kouya and the Festival")
 
     scene rice red with dis
     play music festival_ambience
@@ -4516,7 +4516,7 @@ label kouya22:
 ######################################################
 label shin22:
     
-    $ event_name = "Nervous? First Date"
+    $ event_name = _("Nervous? First Date")
 
     play music festival_ambience fadein 1
     $ renpy.music.set_volume(0.8, 0.0, channel = "music")
@@ -4636,7 +4636,7 @@ label shin22:
         
         "One hour later..."
         
-        $ event_name = "Everywhere I go it's sweet...."
+        $ event_name = _("Everywhere I go it's sweet....")
         
         scene festival_stands with dis
         play music free0421
@@ -4768,7 +4768,7 @@ label shin22:
     ##########################################################
     label shin22_parents:
             
-        $ event_name = "The Bon Dance"
+        $ event_name = _("The Bon Dance")
         
         stop music fadeout 1
         play music festival_ambience fadein 1
@@ -5092,7 +5092,7 @@ label shin22:
     #####################################################
     label shin22_fireworks:
         
-        $ event_name = "His smile illuminated by the flower in the sky"
+        $ event_name = _("His smile illuminated by the flower in the sky")
         
         stop music fadeout 1
         pause 1
@@ -5241,7 +5241,7 @@ label shin22:
 ######################################################
 label juuichi22:
     
-    $ event_name = "Like a Sudden Flame"
+    $ event_name = _("Like a Sudden Flame")
     
     play music free0258
     scene hbroom red with dis
@@ -5280,7 +5280,7 @@ label juuichi22:
     fn "「Sure! 」"
     "Then, we set out to go on our date...{p}er, to the summer festival."
     
-    $ event_name = "Harvesting Ritual"
+    $ event_name = _("Harvesting Ritual")
 
     stop music fadeout 3
     scene black with sdis
@@ -5362,7 +5362,7 @@ label juuichi22:
     ju "「[ln], {w=.2}are you coming? 」"
     fn "「Oh, {w=.2}yeah I am!{p}\ \ Please don't leave me behind! 」"
     
-    $ event_name = "Aimlessly Walking Down the Rows of Stalls"
+    $ event_name = _("Aimlessly Walking Down the Rows of Stalls")
 
     stop music fadeout 3
     scene black with sdis
@@ -5553,7 +5553,7 @@ label juuichi22:
     "...Leaving me standing alone.{p}Well, there's no sense in just standing around, right?{p}I pull myself together and head towards the stalls."
     
     if meet_ten == True:
-        $ event_name = "Ritual of Protection"
+        $ event_name = _("Ritual of Protection")
         
         "...Actually, before that,{p}I think I should store these sweets I have in my\nstomach."
         "I restlessly look around for vaccant bench.{p}An elderly couple is using the one over there,{w=.2}\nand a family with little kids are using one over there."
@@ -5617,7 +5617,7 @@ label juuichi22:
         "But that's all in the past now.{p}I look at my hands.{p}Alright,{w=.2} let's finish the cotton candy for now."
 
 
-    $ event_name = "Boy Meets Tiger"
+    $ event_name = _("Boy Meets Tiger")
 
     $ renpy.music.set_volume(0.4, 3.0, channel = "music")
     scene black with sdis
@@ -5880,7 +5880,7 @@ label juuichi22:
     "I look around the stalls as I speak.{p}There are a variety of them,{w=.2}\nbut only one catches my eye."
     fn "「How about that one? 」"
     
-    $ event_name = "Fish!"
+    $ event_name = _("Fish!")
 
     show ju 008 with dis
     
@@ -5930,7 +5930,7 @@ label juuichi22:
     ju "「Too bad. 」"
     "Juuichi-san, {w=.2}who has sat down next to me without me\nrealizing it, {w=.2}says.{w} It's really frustrating because\nI was so close."
     
-    $ event_name = "More Fishing!!"
+    $ event_name = _("More Fishing!!")
     
     fn "「Mister, {w=.2}one more! 」"
     attendant "「Thanks, {w=.2}here you go. 」"
@@ -5978,7 +5978,7 @@ label juuichi22:
     
     ju "「...Y-{w=.2}yeah. 」"
     
-    $ event_name =  "Dream-ColoredFireworksAtTheEndOfSummer"
+    $ event_name = _("Dream-ColoredFireworksAtTheEndOfSummer")
     
     scene black with sdis
     scene forest01 night with sdis
@@ -6236,7 +6236,7 @@ label juuichi22:
     ####################################################
     label juuichi22_continue:
             
-        $ event_name = "I Choose Not to Go Back"
+        $ event_name = _("I Choose Not to Go Back")
         
         fn "「I'm sorry, {w=.2}but just a little more... 」"
         "Without waiting for him to respond, I move my hand to\nthe center part.{w} Through his pants,{w=.2} I can feel his\nbody temperature is especially high there."
@@ -6253,7 +6253,7 @@ label juuichi22:
     #####################################################
     label juuichi22_keep:
             
-        $ event_name = "Just the Two of Us"
+        $ event_name = _("Just the Two of Us")
 
         stop music fadeout 10
         
@@ -6375,7 +6375,7 @@ label juuichi22:
         "I smile at him again."
         fn "「You...{w} I want all of you. 」"
         
-        $ event_name = "The Tale of the Locked-Away Garden"
+        $ event_name = _("The Tale of the Locked-Away Garden")
         
         stop music fadeout 5
         scene black with sdis
@@ -6409,7 +6409,7 @@ label juuichi22:
     ######################################################
     label juuichi22_stop:
             
-        $ event_name = "After the Festival"
+        $ event_name = _("After the Festival")
         
         "What the heck am I doing?{w} I suddenly snap back to\nreality.{w} Betraying Juuichi-san's trust, {w=.2}that's what\nI'm doing."
         fn "「Juuichi-san, {w=.2}I'm sorry. 」"

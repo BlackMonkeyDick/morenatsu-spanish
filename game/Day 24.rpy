@@ -7,7 +7,7 @@ screen hill24:
         add "icon_shun"
         at hillbounce2
     hbox:
-        text "Hill"
+        text _("Hill")
         xalign .59 yalign .56
         
 screen minasatomap24():
@@ -15,7 +15,7 @@ screen minasatomap24():
     add "mapdate"
     imagebutton idle "a icon" hover "icon loop"  xpos 440 ypos 100  action Jump("shun24") hovered Show("hill24")  unhovered Hide("hill24") hover_sound "av/audio/click_008.wav" 
     hbox:
-        text "{size=+30}August 24"
+        text _("{size=+30}August 24")
         at maptime
         
 ##############################################
@@ -26,8 +26,8 @@ label day24:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 24
-    $ the_date = "August 24"
-    $ event_name = "８月24日"
+    $ the_date = _("August 24")
+    $ event_name = _("８月24日")
     
     if favorite == "kounosuke" or favorite == "shun" or favorite == "shin":
         window hide
@@ -62,7 +62,7 @@ label map24:
 ########################################################
 label kounosuke24:
 
-    $ event_name = "Checking up on him"
+    $ event_name = _("Checking up on him")
 
     play music cicada01 fadein 1.5
     $ renpy.music.set_volume(0.2, 0.0, channel = "music")
@@ -283,7 +283,7 @@ label kounosuke24:
 ########################################################
 label shun24:
      
-    $ event_name = "A Boy's Hill"
+    $ event_name = _("A Boy's Hill")
     scene map
     hide screen hill24
     stop music fadeout 1.5
@@ -319,7 +319,7 @@ label shun24:
     ######################################################
     label shun24_confusion:
         
-        $ event_name = "Uncertain Palpitating"
+        $ event_name = _("Uncertain Palpitating")
 
         stop music fadeout 1
         pause 1
@@ -371,7 +371,7 @@ label shun24:
     ##################################################
     label shun24_practice:
             
-        $ event_name = "The Next Rhythm"
+        $ event_name = _("The Next Rhythm")
 
         stop music fadeout 1
         pause 1
@@ -464,7 +464,7 @@ label shun24:
     ##########################################################
     label shun24_enka:
 
-        $ event_name = "Enka-ish"
+        $ event_name = _("Enka-ish")
         
         stop music fadeout 1
         pause 1
@@ -593,7 +593,7 @@ label shun24:
     #####################################################
     label shun24_pop:
             
-        $ event_name = "Pop Idol-like"
+        $ event_name = _("Pop Idol-like")
         
         stop music fadeout 1
         pause 1
@@ -718,7 +718,7 @@ label shun24:
 ########################################################
 label shin24:
         
-    $ event_name = "Just like always..."
+    $ event_name = _("Just like always...")
     
     scene shin_house_front with dis
     play music cicada01
@@ -856,7 +856,7 @@ label shin24:
     ########################################################
     label shin24_please_go:
             
-        $ event_name = "Don't Come Again"
+        $ event_name = _("Don't Come Again")
         
         show si 001 with dis
         
@@ -1003,7 +1003,7 @@ label shin24:
     ##############################################################
     label shin24_confess:
         
-        $ event_name = "Because I'm selfish..."
+        $ event_name = _("Because I'm selfish...")
         
         fn "「I-it's not disgusting at all. 」"
         
@@ -1153,7 +1153,7 @@ label shin24:
     #########################################################
     label shin24_rape:
             
-        $ event_name = "You are a HORRIBLE PERSON, you MONSTER."
+        $ event_name = _("You are a HORRIBLE PERSON, you MONSTER.")
         
         stop music fadeout 1.5
         scene black with sdis
@@ -1265,7 +1265,7 @@ label shin24:
     ######################################################
     label shin24_regret:
             
-        $ event_name = "I didn't mean to..."
+        $ event_name = _("I didn't mean to...")
         
         "What am I doing...?\nI came back to my senses while still\nholding Shin-kun down."
         
@@ -1306,7 +1306,7 @@ label shin24:
     ###########################################################
     label shin24_insult:
             
-        $ event_name = "A Confession? Or..."
+        $ event_name = _("A Confession? Or...")
         
         "I don't know what to make of things\nbeing confessed to so suddenly."
         "My head was so filled with confusion,\nit was cramming up fast."
