@@ -16,8 +16,8 @@ label begin:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 1
-    $ the_date = "August 1"
-    $ event_name = "The Letter"
+    $ the_date = _("August 1")
+    $ event_name = _("The Letter")
     
     scene black
     
@@ -58,7 +58,7 @@ label begin:
     #pause 1
     
     ##########################
-    $ event_name = "On the Bus"
+    $ event_name = _("On the Bus")
     ##########################
     
     #scene black with wipe_up
@@ -96,7 +96,7 @@ label begin:
     stop music fadeout 3
     
     ################################
-    $ event_name = "At the Bus Stop"
+    $ event_name = _("At the Bus Stop")
     ################################
     
     pause 3    
@@ -230,7 +230,7 @@ label begin:
     "A welcoming party, huh?{p}Wonder if everybody is going.{p}I'm really excited!"
 
     ###################################
-    $ event_name = "To Grandparents' Home"
+    $ event_name = _("To Grandparents' Home")
     ###################################
     
     scene rice with wipeleft
@@ -264,7 +264,7 @@ label begin:
     fn "「Well, I need to get going too. 」"
 
     #############################
-    $ event_name = "Homecoming"
+    $ event_name = _("Homecoming")
     #############################
     
     scene black with sdis
@@ -318,7 +318,7 @@ label begin:
     gps "「Have a good time! 」"
     
     #####################################
-    $ event_name = "The Welcome Party Begins"
+    $ event_name = _("The Welcome Party Begins")
     #####################################
 
     scene black with Dissolve(2)
@@ -820,7 +820,7 @@ label begin:
     "......"
     
     ################################
-    $ event_name = "Who to sit beside?"
+    $ event_name = _("Who to sit beside?")
     ################################
 
     scene black with Dissolve(2)
@@ -1206,7 +1206,7 @@ label begin:
         
     #########################################
     label sit_with_kouya:
-        $ event_name = "Next to Kouya"
+        $ event_name = _("Next to Kouya")
         $ love_kouya += 1
         
         show ka 002 at center with wipe_right
@@ -1484,7 +1484,7 @@ label begin:
         
     #################################################
     label sit_with_kyoutarou:
-        $ event_name = "Across from Kyouji-senpai and Soutarou-kun"
+        $ event_name = _("Across from Kyouji-senpai and Soutarou-kun")
         $ love_soutarou += 1
         $ love_kyouji += 1
 
@@ -1747,7 +1747,7 @@ label begin:
         
     #######################################
     label sit_with_juuichi:
-        $ event_name = "Juuichi-san is still continuing with judo, huh?"
+        $ event_name = _("Juuichi-san is still continuing with judo, huh?")
         $ love_juuichi += 1
         
         "I return from the bathroom,\nthere's a pile of meat and vegetables on the table.{p}The first thing I hear is Torahiko's whining."
@@ -2144,7 +2144,7 @@ label begin:
 
     ############################################
     label sit_with_shun:
-        $ event_name = "Dinner with Shun"
+        $ event_name = _("Dinner with Shun")
         $ love_shun += 1
 
         show su 001 at center with wipeleft
@@ -2242,7 +2242,7 @@ label begin:
         
     ######################################
     label sit_with_shin:
-        $ event_name = "Next to Shin-kun"
+        $ event_name = _("Next to Shin-kun")
         $ love_shin += 1
 
         fn "「Is it all right if I sit next to you? 」"
@@ -2417,7 +2417,7 @@ label begin:
         
     ###########################################
     label sit_with_kounosuke:
-        $ event_name = "Next to Kounosuke"
+        $ event_name = _("Next to Kounosuke")
         $ love_kounosuke += 1
 
         show to 001 at farleft
@@ -2583,7 +2583,7 @@ label begin:
         
     #######################################
     label sit_with_torahiko:
-        $ event_name = "Torahiko's Welcome"
+        $ event_name = _("Torahiko's Welcome")
         $ love_torahiko += 1
 
         "I decide to sit with Torahiko."
@@ -3247,7 +3247,7 @@ label begin:
         
     #######################################
     label party_end:
-        $ event_name = "The Party in Full Swing"
+        $ event_name = _("The Party in Full Swing")
 
         stop music fadeout 3
         scene black with Dissolve(2)        
