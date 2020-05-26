@@ -8,7 +8,7 @@ screen park09:
         add "icon_kouya"
         at parkbounce2
     hbox:
-        text "Park"
+        text _("Park")
         xalign .49 yalign .55
 screen shunhouse09:
     hbox:
@@ -18,7 +18,7 @@ screen shunhouse09:
         add "icon_shun"
         at shunhousebounce2
     hbox:
-        text "Shun's House"
+        text _("Shun's House")
         xalign .72 yalign .61
 screen ricefield09:
     hbox:
@@ -28,7 +28,7 @@ screen ricefield09:
         add "icon_juu"
         at ricebounce2
     hbox:
-        text "Rice Fields"
+        text _("Rice Fields")
         xalign .245 yalign .66     
 screen forest09:
     hbox:
@@ -38,7 +38,7 @@ screen forest09:
         add "icon_shin"
         at forestbounce2
     hbox:
-        text "Forest"
+        text _("Forest")
         xalign .61 yalign .87
 screen tatsukihouse09:
     hbox:
@@ -48,7 +48,7 @@ screen tatsukihouse09:
         add "icon_tatsu"
         at tatsukibounce2
     hbox: 
-        text "Tatsuki's House"
+        text _("Tatsuki's House")
         xalign .85 yalign .88
 
 screen minasatomap09a():
@@ -60,7 +60,7 @@ screen minasatomap09a():
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki09") hovered Show("tatsukihouse09")  unhovered Hide("tatsukihouse09") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 197 ypos 325  action Jump("juuichi09") hovered Show("ricefield09")  unhovered Hide("ricefield09") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 9"
+        text _("{size=+30}August 9")
         at maptime
         
 screen minasatomap09b():
@@ -71,7 +71,7 @@ screen minasatomap09b():
     imagebutton idle "a icon" hover "icon loop"  xpos 453 ypos 447  action Jump("shin09") hovered Show("forest09")  unhovered Hide("forest09") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki09") hovered Show("tatsukihouse09")  unhovered Hide("tatsukihouse09") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 9"
+        text _("{size=+30}August 9")
         at maptime
         
 ############################################
@@ -82,8 +82,8 @@ label day09:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ focus_character = ""
-    $ event_name = "８月9日"
-    $ the_date = "August 9"
+    $ event_name = _("８月9日")
+    $ the_date = _("August 9")
     $ day = 9
     
     window hide
@@ -112,7 +112,7 @@ label day09:
 label kouya09:
     
     $ focus_character = "kouya"
-    $ event_name = "Taking Shelter in the Park from Rain"
+    $ event_name = _("Taking Shelter in the Park from Rain")
     $ love_kouya += 1
     
     scene map
@@ -177,7 +177,7 @@ label kouya09:
     show raining 
     with wipe_right
 
-    $ event_name = "The Boy Taking Shelter from the Rain"
+    $ event_name = _("The Boy Taking Shelter from the Rain")
     
     "When I arrived at the park,\nI thought I was going back into the past.\nEverything was the same as it used to be."
     "Looking around at the entrance,\nI could almost see an overlay of\nmy memories on top of the scenery."
@@ -327,7 +327,7 @@ label kouya09:
     "And then the blurred world\nbecame something else altogether."
     "That's it, I remember-"
     
-    $ event_name = "The Boy in the Memory"
+    $ event_name = _("The Boy in the Memory")
     
     scene black with dis
     pause .3
@@ -352,7 +352,7 @@ label kouya09:
     "It was then."
     who "「Hey. 」"
 
-    $ event_name = "The Boys Under the Umbrella"
+    $ event_name = _("The Boys Under the Umbrella")
 
     ka "「-ey,{w=.3} -h- 」"
     fn "「... 」"
@@ -393,7 +393,7 @@ label shun09:
 
     $ focus_character = "shun"
     $ love_shun += 1
-    $ event_name = "3 Black Sets"
+    $ event_name = _("3 Black Sets")
 
     scene map
     stop music fadeout 1
@@ -499,7 +499,7 @@ label shun09:
     ############################################
     label shun09_fighting:
 
-        $ event_name = "←↓→＋Ｐ"
+        $ event_name = _("←↓→＋Ｐ")
         show su 001 with dis
         play music pops_001 fadein .5
     
@@ -577,7 +577,7 @@ label shun09:
     #########################################    
     label shun09_puzzle:
         
-        $ event_name = "ＮＥＸＴ□□□□"
+        $ event_name = _("ＮＥＸＴ□□□□")
 
         fn "「This won't be too hard. I should be able\n\ \ to learn the rules fairly quickly. 」"
     
@@ -642,7 +642,7 @@ label shun09:
     ###########################################
     label shun09_oldgame:
 
-        $ event_name = "Dungeon Mapping"
+        $ event_name = _("Dungeon Mapping")
             
         fn "「Back then there was a game\n\ \ I'd come to your house to play,\n\ \ I want to see if it might be here. 」"
         su "「Alright.\n\ \ Please wait a minute♪ 」"
@@ -736,7 +736,7 @@ label shun09:
 ###############################################
 label shin09:
     
-    $ event_name = "Who went into the forest...?"
+    $ event_name = _("Who went into the forest...?")
     $ love_shin += 1
     $ focus_character = "shin"
 
@@ -921,7 +921,7 @@ label shin09:
         play music daily05
         $ renpy.music.set_volume(0.7, 0.5, channel = "music") 
     
-        $ event_name = "One day in the woods, I met Shin-kun"
+        $ event_name = _("One day in the woods, I met Shin-kun")
         
         si "「What are you doing in a place like this? 」"
         fn "{size=+15}「THAT'S WHAT I WANTED TO\n\ \ ASK！ 」" 
@@ -1182,7 +1182,7 @@ label shin09:
         
         play music free0531
     
-        $ event_name = "Is something wrong with Shin-kun?"
+        $ event_name = _("Is something wrong with Shin-kun?")
         
         "Shin-kun was over there.{w} Here where the forest\nopens inside, there was one large tree, and at its\nroots was a figure lying its head against it."
         "Below that happy head a backpack was set down,\nand while I don't see any wounds,\nI won't know unless I get closer to take a look."
@@ -1207,7 +1207,7 @@ label shin09:
     #########################################
     label shin09_cpr:
 
-        $ event_name = "Basking in the Sun"
+        $ event_name = _("Basking in the Sun")
         
         "A-anyway, I need to do artificial respiration!{p}Hee,{w=.3} hoo,{w=.3} hee, {w=.3}hoo,{w} okay then!"
     
@@ -1388,7 +1388,7 @@ label shin09:
     ########################################
     label shin09_shout:
 
-        $ event_name = "Secret Place"
+        $ event_name = _("Secret Place")
 
         $ renpy.music.set_volume(0.5, 0.1, channel = "music")
     
@@ -1709,7 +1709,7 @@ label juuichi09:
 
     $ love_juuichi += 1
     $ focus_character = "juuichi"
-    $ event_name = "Rain Poems"
+    $ event_name = _("Rain Poems")
 
     scene map
     stop music
@@ -1806,7 +1806,7 @@ label juuichi09:
     #########################################
     label juuichi09_help:
 
-        $ event_name = "Once Past the Border, One May Do Anything"
+        $ event_name = _("Once Past the Border, One May Do Anything")
         $ love_juuichi += 1
         
         "I don't think I've had help changing clothes\nsince elementary school, but these days it seems\nI need it more and more."
@@ -1872,7 +1872,7 @@ label juuichi09:
     ###########################################    
     label juuichi09_nohelp:
 
-        $ event_name = "There's Nothing More Embarrassing than Asking"
+        $ event_name = _("There's Nothing More Embarrassing than Asking")
         $ love_juuichi -= 1
         
         "It's too embarrassing to ask\nfor help getting undressed.{p}I'm not a kindergartener, after all."
@@ -1915,7 +1915,7 @@ label juuichi09:
     ############################################
     label juuichi09_talk:
 
-        $ event_name = "In the Waiting Area"
+        $ event_name = _("In the Waiting Area")
         
         fn "「No,{w=.3} you don't have to do that... 」"
         ju "「Humans don't have fur, so it doesn't\n\ \ take much to change your body temperature. 」"
@@ -2133,7 +2133,7 @@ label juuichi09:
     ########################################
     label juuichi09_borrow:
 
-        $ event_name = "I Would Also Like to Borrow the Bear's Hands"
+        $ event_name = _("I Would Also Like to Borrow the Bear's Hands")
         $ love_juuichi += 1
         $ borrow_jacket = True
     
@@ -2154,7 +2154,7 @@ label juuichi09:
     ##########################################
     label juuichi09_return:
 
-        $ event_name = "Returning it now"
+        $ event_name = _("Returning it now")
         
         fn "「Nah, I'll be fine.{p}\ \ Thanks for letting me borrow the jersey. 」"
         "I don't want to impose on him that much.{p}I take off the jacket, fold it up,{w=.3}\nand hand it back to him."

@@ -32,7 +32,7 @@ screen busstop07:
         add "icon_tora"
         at busbounce10 
     hbox:
-        text "Bus Stop"
+        text _("Bus Stop")
         xalign .8 yalign .38
 
 screen minasatomap07():
@@ -40,7 +40,7 @@ screen minasatomap07():
     add "mapdate"
     imagebutton idle "a icon" hover "icon loop" xpos 583 ypos 165 action Jump("beach07_meetup") hovered Show("busstop07")  unhovered Hide("busstop07") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 7"
+        text _("{size=+30}August 7")
         at maptime
 
 ##########################################
@@ -51,7 +51,7 @@ label day07:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
 
     $ focus_character = ""
-    $ event_name = "８月7日"
+    $ event_name = _("８月7日")
     
     scene hbroom with wipeleft
     
@@ -91,7 +91,7 @@ label day07:
 #############################################
 label beach07_invite_tatsuki:
     
-    $ event_name = "Phone call from Big Bro Tatsuki"
+    $ event_name = _("Phone call from Big Bro Tatsuki")
     
     ta "「Yo, [fn]. You know who this is?{p}\ \ It's Tatsu-nii! 」"
     fn "「Yeah, I could tell it was you. 」"
@@ -113,7 +113,7 @@ label beach07_invite_tatsuki:
 #########################################  
 label beach07_invite_kounosuke:
     
-    $ event_name = "Phone call from Kounosuke"
+    $ event_name = _("Phone call from Kounosuke")
 
     ko "「Hello. Is this [fn]-kun? 」"
     fn "「Kounosuke? 」"
@@ -154,7 +154,7 @@ label beach07_invite_kounosuke:
 #########################################
 label beach07_invite_shun:
     
-    $ event_name = "Phone call from Shun"
+    $ event_name = _("Phone call from Shun")
     
     who "「Good evening, is this the [ln] residence? 」"
     fn "「Yes, it is...{p}\ \ Is that you, Shun-kun? 」"
@@ -194,7 +194,7 @@ label beach07_invite_shun:
 ########################################
 label beach07_invite_kouya:
     
-    $ event_name = "Phone call from Kouya"
+    $ event_name = _("Phone call from Kouya")
     
     ka "「Yo, [fn]. It's me. 」"
     fn "「Huh, Kouya? What are you calling for? 」"
@@ -222,7 +222,7 @@ label beach07_invite_kouya:
 ###########################################
 label beach07_invite_juuichi:
     
-    $ event_name = "Phone call from Juuichi"
+    $ event_name = _("Phone call from Juuichi")
     
     ju "「Hello, this is Mikazuki speaking.{p}\ \ Is [fn]-kun home? 」"
     "I hear Juuichi-san's voice from the phone.{p}His tone seems somewhat higher than usual."
@@ -268,7 +268,7 @@ label beach07_invite_juuichi:
 ########################################
 label beach07_invite_shin:
     
-    $ event_name = "Phone call from Shin"
+    $ event_name = _("Phone call from Shin")
     
     si "「Hello, this is Kuroi. 」"
     fn "「Oh, Shin-kun? 」"
@@ -298,7 +298,7 @@ label beach07_invite_shin:
 #######################################
 label beach07_invite_soutarou:
     
-    $ event_name = "Phone call from Soutarou"
+    $ event_name = _("Phone call from Soutarou")
     
     who "「Good evenin'! Is this [ln]-san? 」"
     "Ah, that way of talking, it's..."
@@ -337,7 +337,7 @@ label beach07_invite_soutarou:
 #######################################
 label beach07_packing:
     
-    $ event_name = "Did I forget anything?"
+    $ event_name = _("Did I forget anything?")
     
     scene hbroom with sdis
     play music free0211
@@ -401,7 +401,7 @@ label beach07_packing:
 ###########################################
 label beach07_meetup:
     
-    $ event_name = "Everyone Assemble"
+    $ event_name = _("Everyone Assemble")
     scene map
     hide screen busstop07
     scene bstop with wipe_right
@@ -624,7 +624,7 @@ label beach07_meetup:
     pause .5
     scene bus with wipe_down_slow
     
-    $ event_name = "Let's go to the sea"
+    $ event_name = _("Let's go to the sea")
 
     fn "「Come to think of it,\n\ \ was there a beach around here? 」"
     ju "「There is...{p}\ \ If you go the other direction, away from Kazenari.{p}\ \ There's no other reason to go out this way. 」"
@@ -806,7 +806,7 @@ label beach07_choice:
 label beach07_tatsuki:
 
     $ focus_character = "tatsuki"
-    $ event_name = "The Beach"
+    $ event_name = _("The Beach")
     $ love_tatsuki += 1
 
     scene black with sdis
@@ -969,7 +969,7 @@ label beach07_tatsuki:
 #########################################    
 label beach07_kouya:
     
-    $ event_name = "Something Floating in the Water"
+    $ event_name = _("Something Floating in the Water")
     $ focus_character = "kouya"
     $ love_kouya += 1
     
@@ -1136,7 +1136,7 @@ label beach07_kouya:
 #####################################
 label beach07_shun:
     
-    $ event_name = "The Blue Sea! The Shining Sun! And Shun-kun!"
+    $ event_name = _("The Blue Sea! The Shining Sun! And Shun-kun!")
     $ focus_character = "shun"
     $ love_shun += 1
     
@@ -1322,7 +1322,7 @@ label beach07_hangloose:
 #############################################     
 label beach07_shin:
 
-    $ event_name = "Sunscreen is a Man's Love"
+    $ event_name = _("Sunscreen is a Man's Love")
     $ focus_character = "shin"
     $ love_shin += 1
     
@@ -1503,7 +1503,7 @@ label beach07_shin:
 ########################################    
 label beach07_kyoutarou:
 
-    $ event_name = "See-through"
+    $ event_name = _("See-through")
     $ focus_character = "kyoutarou" 
     $ love_soutarou += 1
     $ love_kyouji += 1
@@ -2013,7 +2013,7 @@ label beach07_juuichi:
         jump beach_choice07
     else:
 
-        $ event_name = "Reckless, Let's Go! Paradise"
+        $ event_name = _("Reckless, Let's Go! Paradise")
         $ focus_character = "juuichi"
         $ love_juuichi += 1
         
@@ -2842,7 +2842,7 @@ label beach07_juuichi:
 ###########################################
 label beach07_torahiko:
     
-    $ event_name = "With Torahiko"
+    $ event_name = _("With Torahiko")
     $ focus_character = "torahiko"
     $ love_torahiko += 1
 
@@ -3368,7 +3368,7 @@ label beach07_torahiko:
 label beach07_ridehome:
     
     $ focus_character = ""
-    $ event_name = "Bus Ride Home"
+    $ event_name = _("Bus Ride Home")
     stop music fadeout 2.5
     scene black with sdis
     scene bus red with Dissolve(.5)

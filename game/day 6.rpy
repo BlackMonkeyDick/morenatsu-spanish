@@ -8,7 +8,7 @@ screen torahouse06:
         add "icon_tora"
         at torabounce2
     hbox:
-        text "Torahiko's House"
+        text _("Torahiko's House")
         xalign .5 yalign .58
         
 screen kounocandy06:
@@ -19,7 +19,7 @@ screen kounocandy06:
         add "icon_kouno"
         at marketbounce2
     hbox:
-        text "Candy Store"
+        text _("Candy Store")
         xalign .5 yalign .53
 
 screen minasatomap06():
@@ -28,7 +28,7 @@ screen minasatomap06():
     imagebutton idle "a icon" hover "icon loop" xpos 363 ypos 283 action Jump("torahiko06") hovered Show("torahouse06")  unhovered Hide("torahouse06") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop" xpos 372 ypos 249  action Jump("kounosuke06") hovered Show("kounocandy06")  unhovered Hide("kounocandy06") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 6"
+        text _("{size=+30}August 6")
         at maptime
 
 #######################################        
@@ -39,8 +39,8 @@ label day06:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 6
-    $ the_date = "August 6"
-    $ event_name = "８月6日"
+    $ the_date = _("August 6")
+    $ event_name = _("８月6日")
     $ focus_character = ""
     
     window hide
@@ -121,7 +121,7 @@ label day06:
 ###############################################    
 label torahiko06:
     
-    $ event_name = "First time use"
+    $ event_name = _("First time use")
     $ focus_character = "torahiko"
     $ love_tatsuki += 1
     $ love_torahiko += 1
@@ -235,7 +235,7 @@ label torahiko06:
     
     ###Apparently there was going to be a choice of whether you accept Torahiko's request or refuse, but unavailable in last version of original
     
-    $ event_name = "Going on an errand"
+    $ event_name = _("Going on an errand")
     
     fn "「Since this is something you want to do,\n\ \ of course you need to come too, right? 」"
     
@@ -650,7 +650,7 @@ label torahiko06:
     with dis
     extend "This is..."
     
-    $ event_name = "This is..."
+    $ event_name = _("This is...")
     
     menu:
         "A. Delicious!":
@@ -663,7 +663,7 @@ label torahiko06:
 ########################################            
 label torahiko06_delicious:
     
-    $ event_name = "Amazing"
+    $ event_name = _("Amazing")
     $ love_tatsuki += 1
     $ love_torahiko += 1
 
@@ -728,7 +728,7 @@ label torahiko06_delicious:
 ########################################    
 label torahiko06_notgood:
     
-    $ event_name = "Pasta should be..."
+    $ event_name = _("Pasta should be...")
     $ love_tatsuki -= 1
     $ love_torahiko -= 1
 
@@ -785,7 +785,7 @@ label torahiko06_notgood:
 ##############################################
 label torahiko06_disgusting:
     
-    $ event_name = "What should I do...?"
+    $ event_name = _("What should I do...?")
     $ love_tatsuki += 1
     $ love_torahiko -= 1
     
@@ -855,7 +855,7 @@ label torahiko06_disgusting:
 label kounosuke06:
     
     $ focus_character = "kounosuke"
-    $ event_name = "Right, let's take Paranormal Pictures"
+    $ event_name = _("Right, let's take Paranormal Pictures")
     stop music
     scene map
     hide screen kounocandy06
@@ -1264,7 +1264,7 @@ label day06_pick_shun:
 ##############################################
 label day06_testbegin:
     
-    $ event_name = "Secret of the Seven Wonders"
+    $ event_name = _("Secret of the Seven Wonders")
     play music higurasi fadein 2
     
     scene school01 night
@@ -1353,7 +1353,7 @@ label day06_testbegin:
 ############################################        
 label day06_kounotest:
 
-    $ event_name = "Gossip-loving Tanuki"
+    $ event_name = _("Gossip-loving Tanuki")
     stop music fadeout 2
     scene school hallway 1 night with dis
     pause 1
@@ -1746,7 +1746,7 @@ label day06_kounotest:
 ######################################    
 label day06_toratest:
 
-    $ event_name = "The Cowardly Tiger"
+    $ event_name = _("The Cowardly Tiger")
     play music musi2
     scene school gym night with dis
 
@@ -2178,7 +2178,7 @@ label day06_toratest:
 #############################################
 label day06_shuntest:
 
-    $ event_name = "Small Wolf"
+    $ event_name = _("Small Wolf")
     stop music fadeout 2
     scene school stairway night with dis
     
@@ -2599,7 +2599,7 @@ label day06_shuntest:
 ########################################
 label day06_testend:
 
-    $ event_name = "Heading home"
+    $ event_name = _("Heading home")
 
     show ko 001 night with dis
         

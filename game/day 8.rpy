@@ -8,7 +8,7 @@ screen tatsukishrine08:
         add "icon_tatsu"
         at shrinebounce2
     hbox:
-        text "Minasato Shrine"
+        text _("Minasato Shrine")
         xalign .16 yalign .12
         
 screen kouyaforest08:
@@ -19,7 +19,7 @@ screen kouyaforest08:
         add "icon_kouya"
         at forestbounce2
     hbox:
-        text "Forest"
+        text _("Forest")
         xalign .61 yalign .87
         
 screen kounocandy08:
@@ -30,7 +30,7 @@ screen kounocandy08:
         add "icon_kouno"
         at marketbounce2
     hbox:
-        text "Candy Store"
+        text _("Candy Store")
         xalign .5 yalign .53
 
 screen minasatomap08a():
@@ -39,7 +39,7 @@ screen minasatomap08a():
     imagebutton idle "a icon" hover "icon loop" xpos 164 ypos 104 action Jump("tatsuki08") hovered Show("tatsukishrine08")  unhovered Hide("tatsukishrine08") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop" xpos 453 ypos 447  action Jump("kouya08") hovered Show("kouyaforest08")  unhovered Hide("kouyaforest08") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 8"
+        text _("{size=+30}August 8")
         at maptime
         
 screen minasatomap08b():
@@ -47,7 +47,7 @@ screen minasatomap08b():
     add "mapdate"
     imagebutton idle "a icon" hover "icon loop" xpos 372 ypos 249 action Jump("kounosuke08") hovered Show("kounocandy08")  unhovered Hide("kounocandy08") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 8"
+        text _("{size=+30}August 8")
         at maptime
 
 
@@ -59,15 +59,15 @@ label day08:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 8
-    $ the_date = "August 8"
-    $ event_name = "８月8日"
+    $ the_date = _("August 8")
+    $ event_name = _("８月8日")
     $ focus_character = ""
     
     window hide
     play music birds_chirping
     
     scene sky01 
-    show text "{size=+130}August 8" at truecenter
+    show text _("{size=+130}August 8") at truecenter
     with Dissolve(.5)
 
     pause 3
@@ -88,7 +88,7 @@ label day08:
 ##############################################
 label tatsuki08:
 
-    $ event_name = "Just another Day for Tatsuki and Torahiko"
+    $ event_name = _("Just another Day for Tatsuki and Torahiko")
     $ love_tatsuki += 1
     $ focus_character = "tatsuki"
     
@@ -400,7 +400,7 @@ label kouya08:
 
     $ love_kouya += 1
     $ focus_character = "kouya"
-    $ event_name = "Secret Concert Meeting"
+    $ event_name = _("Secret Concert Meeting")
 
     scene map
     hide screen kouyaforest08
@@ -583,7 +583,7 @@ label kouya08:
 #############################################
 label kouya08_teachme:
 
-    $ event_name = "Secret and Private Lesson"
+    $ event_name = _("Secret and Private Lesson")
     $ love_kouya += 1
 
     fn "「All right, I guess I'll take you up on that. 」"
@@ -793,7 +793,7 @@ label kouya08_teachme:
 ########################################
 label kouya08_pass:
 
-    $ event_name = "Cherish your Alone Time"
+    $ event_name = _("Cherish your Alone Time")
     
     fn "「Hmm, I came all this way but I think I'll pass.{p}\ \ If I'm here, you can't take a break can you? 」"
 
@@ -823,7 +823,7 @@ label kouya08_pass:
 label kounosuke08:
     
     $ focus_character = "kounosuke"
-    $ event_name = "Spirit Photography results"
+    $ event_name = _("Spirit Photography results")
 
     scene map 
     hide screen kounocandy08
@@ -875,7 +875,7 @@ label kounosuke08:
 ############################################
 label day08_pictures_kouno:
 
-    $ event_name = "Someone I know, but don't know"
+    $ event_name = _("Someone I know, but don't know")
     $ love_kounosuke += 1
 
     show ko 002 with dis
@@ -1161,7 +1161,7 @@ label day08_pictures_kouno:
 ##############################################
 label day08_pictures_tora:
     
-    $ event_name = "Wasn't it Kounosuke....."
+    $ event_name = _("Wasn't it Kounosuke.....")
     $ love_torahiko += 1
     
     show ko 005 with dis
@@ -1481,7 +1481,7 @@ label day08_pictures_tora:
 ########################################
 label day08_pictures_shun:
     
-    $ event_name = "The Seventh Wonder"
+    $ event_name = _("The Seventh Wonder")
     $ love_shun += 1
 
     show ko 005 with dis

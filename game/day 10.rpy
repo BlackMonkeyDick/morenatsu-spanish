@@ -8,7 +8,7 @@ screen marketplace10:
         add "icon_shun"
         at marketbounce2
     hbox:
-        text "Market"
+        text _("Market")
         xalign .5 yalign .52
 screen busstop10:
     hbox:
@@ -18,7 +18,7 @@ screen busstop10:
         add "icon_juu"
         at busbounce2
     hbox:
-        text "Bus Stop"
+        text _("Bus Stop")
         xalign .8 yalign .38
 screen forest10:
     hbox:
@@ -28,7 +28,7 @@ screen forest10:
         add "icon_kouno"
         at forestbounce2
     hbox:
-        text "Forest"
+        text _("Forest")
         xalign .61 yalign .87
 screen tatsukihouse10:
     hbox:
@@ -38,7 +38,7 @@ screen tatsukihouse10:
         add "icon_tatsu"
         at tatsukibounce2
     hbox: 
-        text "Tatsuki's House"
+        text _("Tatsuki's House")
         xalign .85 yalign .88
 
 screen minasatomap10a():
@@ -47,7 +47,7 @@ screen minasatomap10a():
     imagebutton idle "a icon" hover "icon loop"  xpos 372 ypos 249  action Jump("shun10") hovered Show("marketplace10")  unhovered Hide("marketplace10") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 453 ypos 447  action Jump("kounosuke10") hovered Show("forest10")  unhovered Hide("forest10") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 10"
+        text _("{size=+30}August 10")
         at maptime
         
 screen minasatomap10b():
@@ -57,7 +57,7 @@ screen minasatomap10b():
     imagebutton idle "a icon" hover "icon loop" xpos 583 ypos 165 action Jump("juuichi10") hovered Show("busstop10")  unhovered Hide("busstop10") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 453 ypos 447  action Jump("kounosuke10") hovered Show("forest10")  unhovered Hide("forest10") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 10"
+        text _("{size=+30}August 10")
         at maptime
         
 screen minasatomap10c():
@@ -67,7 +67,7 @@ screen minasatomap10c():
     imagebutton idle "a icon" hover "icon loop"  xpos 453 ypos 447  action Jump("kounosuke10") hovered Show("forest10")  unhovered Hide("forest10") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki10") hovered Show("tatsukihouse10")  unhovered Hide("tatsukihouse10") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 10"
+        text _("{size=+30}August 10")
         at maptime
         
 screen minasatomap10d():
@@ -78,7 +78,7 @@ screen minasatomap10d():
     imagebutton idle "a icon" hover "icon loop"  xpos 453 ypos 447  action Jump("kounosuke10") hovered Show("forest10")  unhovered Hide("forest10") hover_sound "av/audio/click_008.wav"
     imagebutton idle "a icon" hover "icon loop"  xpos 662 ypos 391  action Jump("tatsuki10") hovered Show("tatsukihouse10")  unhovered Hide("tatsukihouse10") hover_sound "av/audio/click_008.wav"
     hbox:
-        text "{size=+30}August 10"
+        text _("{size=+30}August 10")
         at maptime
         
 ##########################################
@@ -89,8 +89,8 @@ label day10:
     $ renpy.music.set_volume(1.0, 0.0, channel = "sound2")
     
     $ day = 10
-    $ event_name = "８月10日"
-    $ the_date = "August 10"
+    $ event_name = _("８月10日")
+    $ the_date = _("August 10")
     $ focus_character = ""
     
     window hide
@@ -124,7 +124,7 @@ label day10:
 ##############################################    
 label kounosuke10:
     
-    $ event_name = "Tanuki in the forest"
+    $ event_name = _("Tanuki in the forest")
     $ love_kounosuke += 1
     $ focus_character = "kounosuke"
 
@@ -332,7 +332,7 @@ label kounosuke10:
 label shun10:
 
     $ love_shun += 1
-    $ event_name = "Square button"
+    $ event_name = _("Square button")
     $ focus_character = "shun"
 
     scene map
@@ -464,7 +464,7 @@ label shun10:
     ##############################################    
     label shun10_newgame:
 
-        $ event_name = "Not Being Sold on Launch Day"
+        $ event_name = _("Not Being Sold on Launch Day")
 
         stop music fadeout .25
         play music free0213
@@ -570,7 +570,7 @@ label shun10:
         show su tailwag 01 at center
         with dis 
  
-        $ event_name = "Gaku-san's store"
+        $ event_name = _("Gaku-san's store")
         
         su "「[fn]-saaan, this way♪ 」"
         "Just a short walk from the station,\nI see the store.{w} I chase after Shun-kun,\nwho is gleefully half running."
@@ -631,7 +631,7 @@ label shun10:
         su "「He came with me!{p}\ \ Hehee, I wanted you to meet him too,\n\ \ so I invited him. 」"
         gk "「...Is that so? Thanks. 」"
         
-        $ event_name = "All Kinds of Test Play Stands"
+        $ event_name = _("All Kinds of Test Play Stands")
     
         show su 004 with dis
         
@@ -747,7 +747,7 @@ label shun10:
     #######################################    
     label shun10_sleepy:
 
-        $ event_name = "Don't Break Him"
+        $ event_name = _("Don't Break Him")
     
         scene bookstore with Dissolve(1)
         stop music fadeout .6        
@@ -831,7 +831,7 @@ label shun10:
 ##############################################    
 label juuichi10:
 
-    $ event_name = "Let's Go to Kazenari!"
+    $ event_name = _("Let's Go to Kazenari!")
     $ love_juuichi +=1
     $ focus_character = "juuichi"
 
@@ -865,7 +865,7 @@ label juuichi10:
     
     stop sound fadeout 2 #Buf = 2?
     
-    $ event_name = "Ancient traditions of Kazenari"
+    $ event_name = _("Ancient traditions of Kazenari")
     
     scene black with wipe_right
     pause 1
@@ -919,7 +919,7 @@ label juuichi10:
         scene dojo with wipe_right
         play music cicada01
 
-        $ event_name = "Nothing Ventured, Nothing Gained"
+        $ event_name = _("Nothing Ventured, Nothing Gained")
     
         "From the open doorway,{w=.2}\nI gingerly poke my head inside."
         "It makes me strangely nervous\nto be entering another school.{w=.2}\nMaybe it's because I'm an outsider."
@@ -1094,7 +1094,7 @@ label juuichi10:
         play sound door_close
         extend "and open the door with a clank."
         
-        $ event_name = "Attacked in the Jaws of Death"
+        $ event_name = _("Attacked in the Jaws of Death")
         
         stop music fadeout 3
         scene white with qdis
@@ -1355,7 +1355,7 @@ label juuichi10:
 ##############################################
 label tatsuki10:
 
-    $ event_name = "Part-time job at the Midoriya Group"
+    $ event_name = _("Part-time job at the Midoriya Group")
     $ love_tatsuki += 1
     $ focus_character = "tatsuki"
 
@@ -1593,7 +1593,7 @@ label tatsuki10:
     pause .1
     scene old_house2 with wipe_right
 
-    $ event_name = "After Work"
+    $ event_name = _("After Work")
 
     stop music fadeout .5
     play music higurasi
@@ -1720,7 +1720,7 @@ label tatsuki10:
     
     scene black with blind_vert
     
-    $ event_name = "Past the Mountain"
+    $ event_name = _("Past the Mountain")
 
     play music free10
     $ renpy.music.set_volume(0.8, 0.0, channel = "music")
