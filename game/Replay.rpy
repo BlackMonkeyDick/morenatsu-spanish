@@ -191,7 +191,7 @@ label rp_shin1():
 label nanafuse00:
     
     $ day = "?"
-    $ event_name = "A Lie"
+    $ event_name = _("A Lie")
     
     scene black with dis
     
