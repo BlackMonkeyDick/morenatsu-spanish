@@ -14,7 +14,7 @@ screen rightname(first, last):
 
 label name_input:
 
-    $ event_name = "My name is..."
+    $ event_name = _("My name is...")
     
     $ renpy.music.set_volume(0.5, 0.0, channel = "sound")
     play sound jingle_001
