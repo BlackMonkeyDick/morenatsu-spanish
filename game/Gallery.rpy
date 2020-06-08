@@ -94,39 +94,39 @@ screen gallery_rp(n):
         use buttons_rp_4
         
 screen gallery_title1():
-        textbutton ("With Tatsuki") xpos 210 ypos 530
+        textbutton (_("With Tatsuki")) xpos 210 ypos 530
 screen gallery_title2():
-        textbutton ("Night of the Meteor Shower") xpos 210 ypos 530
+        textbutton (_("Night of the Meteor Shower")) xpos 210 ypos 530
 screen gallery_title3():
-        textbutton ("Lovers' Proof") xpos 210 ypos 530
+        textbutton (_("Lovers' Proof")) xpos 210 ypos 530
 screen gallery_title4():
-        textbutton ("Night of Falling Stars") xpos 210 ypos 530
+        textbutton (_("Night of Falling Stars")) xpos 210 ypos 530
 screen gallery_title5():
-        textbutton ("The Seventh Wonder") xpos 210 ypos 530
+        textbutton (_("The Seventh Wonder")) xpos 210 ypos 530
 screen gallery_title6():
-        textbutton ("Teach me ✭ First ejaculation") xpos 210 ypos 530
+        textbutton (_("Teach me ✭ First ejaculation")) xpos 210 ypos 530
 screen gallery_title7():
-        textbutton ("Continuing from Last Time") xpos 210 ypos 530
+        textbutton (_("Continuing from Last Time")) xpos 210 ypos 530
 screen gallery_title8():
-        textbutton ("Sixty-nine") xpos 210 ypos 530
+        textbutton (_("Sixty-nine")) xpos 210 ypos 530
 screen gallery_title9():
-        textbutton ("Shape of Gratitude") xpos 210 ypos 530
+        textbutton (_("Shape of Gratitude")) xpos 210 ypos 530
 screen gallery_title10():
-        textbutton ("When Heart and Body Connect") xpos 210 ypos 530
+        textbutton (_("When Heart and Body Connect")) xpos 210 ypos 530
 screen gallery_title11():
-        textbutton ("Heartbeats Mixed Together") xpos 210 ypos 530
+        textbutton (_("Heartbeats Mixed Together")) xpos 210 ypos 530
 screen gallery_title12():
-        textbutton ("I Like You") xpos 210 ypos 530
+        textbutton (_("I Like You")) xpos 210 ypos 530
 screen gallery_title13():
-        textbutton ("Goodbyes and a First Kiss") xpos 210 ypos 530
+        textbutton (_("Goodbyes and a First Kiss")) xpos 210 ypos 530
 screen gallery_title14():
-        textbutton ("Afterwords Part 1: Ume & Roah") xpos 210 ypos 530
+        textbutton (_("Afterwords Part 1: Ume & Roah")) xpos 210 ypos 530
 screen gallery_title15():
-        textbutton ("Afterwords Part 2: Hyugakuo & Yukidaruma") xpos 210 ypos 530
+        textbutton (_("Afterwords Part 2: Hyugakuo & Yukidaruma")) xpos 210 ypos 530
 screen gallery_title16():
-        textbutton ("Afterwords Part 3: iwak & Ruoh") xpos 210 ypos 530
+        textbutton (_("Afterwords Part 3: iwak & Ruoh")) xpos 210 ypos 530
 screen gallery_title17():
-        textbutton ("Scripts Afterword: Torainu") xpos 210 ypos 530
+        textbutton (_("Scripts Afterword: Torainu")) xpos 210 ypos 530
         
 
 screen buttons_cg_1(mode ):
@@ -401,27 +401,27 @@ screen buttons_cg_4(mode):
 
 ########################################################
 screen rp_title1():
-        textbutton ("With Tatsuki") xpos 210 ypos 530
+        textbutton (_("With Tatsuki")) xpos 210 ypos 530
 screen rp_title2():
-        textbutton ("Night of the Meteor Shower") xpos 210 ypos 530
+        textbutton (_("Night of the Meteor Shower")) xpos 210 ypos 530
 screen rp_title3():
-        textbutton ("Lovers' Proof") xpos 210 ypos 530
+        textbutton (_("Lovers' Proof")) xpos 210 ypos 530
 screen rp_title4():
-        textbutton ("I am a Lie") xpos 210 ypos 530
+        textbutton (_("I am a Lie")) xpos 210 ypos 530
 screen rp_title5():
-        textbutton ("Teach me ✭ First ejaculation") xpos 210 ypos 530
+        textbutton (_("Teach me ✭ First ejaculation")) xpos 210 ypos 530
 screen rp_title6():
-        textbutton ("Continuing from Last Time") xpos 210 ypos 530
+        textbutton (_("Continuing from Last Time")) xpos 210 ypos 530
 screen rp_title7():
-        textbutton ("Sixty-nine") xpos 210 ypos 530
+        textbutton (_("Sixty-nine")) xpos 210 ypos 530
 screen rp_title8():
-        textbutton ("Shape of Gratitude") xpos 210 ypos 530
+        textbutton (_("Shape of Gratitude")) xpos 210 ypos 530
 screen rp_title9():
-        textbutton ("When Heart and Body Connect") xpos 210 ypos 530
+        textbutton (_("When Heart and Body Connect")) xpos 210 ypos 530
 screen rp_title10():
-        textbutton ("Heartbeats Mixed Together") xpos 210 ypos 530
+        textbutton (_("Heartbeats Mixed Together")) xpos 210 ypos 530
 screen rp_title11():
-        textbutton ("I Like You") xpos 210 ypos 530
+        textbutton (_("I Like You")) xpos 210 ypos 530
 
 screen buttons_rp_1():    
     vbox:
